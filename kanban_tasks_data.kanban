@@ -1,0 +1,74 @@
+{
+	"categories": [
+		{
+			"uuid": "2c2ade38-cacf-410b-a91b-a44f9cbe69d5",
+			"title": "Task",
+			"color": "70bafa"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "17c06567-499c-4090-afcb-e1bb987482f9",
+			"title": "Todo",
+			"tasks": [
+				"479d5bfc-ff27-4bd9-9b67-dcf79fb9bd3d",
+				"a1b06031-98d1-4b96-a7e8-0dc25dd96ba5",
+				"c2faedbe-a557-4d3b-a7e2-f611ac0272f1",
+				"6ed020a2-0723-49e6-aa4e-45f33a61bc12"
+			]
+		},
+		{
+			"uuid": "97fb67db-108a-4938-ae28-9db933bf9793",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "9a0ea3b8-7e89-41c1-affd-d9a68e4ac3a1",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "479d5bfc-ff27-4bd9-9b67-dcf79fb9bd3d",
+			"title": "Sistema de camara (Seguimiento de la pelota)",
+			"description": "",
+			"category": "2c2ade38-cacf-410b-a91b-a44f9cbe69d5",
+			"steps": []
+		},
+		{
+			"uuid": "a1b06031-98d1-4b96-a7e8-0dc25dd96ba5",
+			"title": "IA de los jugadores aliados",
+			"description": "",
+			"category": "2c2ade38-cacf-410b-a91b-a44f9cbe69d5",
+			"steps": []
+		},
+		{
+			"uuid": "c2faedbe-a557-4d3b-a7e2-f611ac0272f1",
+			"title": "IA de los jugadores enemigos",
+			"description": "",
+			"category": "2c2ade38-cacf-410b-a91b-a44f9cbe69d5",
+			"steps": []
+		},
+		{
+			"uuid": "6ed020a2-0723-49e6-aa4e-45f33a61bc12",
+			"title": "Arreglar el sistema de pases/chutes",
+			"description": "",
+			"category": "2c2ade38-cacf-410b-a91b-a44f9cbe69d5",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"17c06567-499c-4090-afcb-e1bb987482f9"
+			],
+			[
+				"97fb67db-108a-4938-ae28-9db933bf9793"
+			],
+			[
+				"9a0ea3b8-7e89-41c1-affd-d9a68e4ac3a1"
+			]
+		]
+	}
+}

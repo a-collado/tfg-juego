@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://cfrabocvvkmko"]
+
+[ext_resource type="PackedScene" uid="uid://sq77ylvt0hw6" path="res://Objects/player_3d.tscn" id="1_7ehee"]
+[ext_resource type="Script" path="res://Scenes/Team.gd" id="1_76dm7"]
+[ext_resource type="Script" path="res://Scripts/PlayerArea.gd" id="2_adj88"]
+[ext_resource type="Script" path="res://Scripts/InputManager.gd" id="3_l4bio"]
+[ext_resource type="Script" path="res://Scripts/RaycastManager.gd" id="4_c4to2"]
+[ext_resource type="Texture2D" uid="uid://bwqwgg2e4hdci" path="res://Assets/dot_black.png" id="5_q46iv"]
+[ext_resource type="Script" path="res://Scripts/Ball.gd" id="6_1vdqp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygqou"]
+albedo_color = Color(0.207843, 0.623529, 0.109804, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vn4gy"]
+radius = 105.005
+
+[sub_resource type="Animation" id="Animation_c7n5n"]
+resource_name = "Click"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(0.164938, 0.217639, 0.164938),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1j3ln"]
+_data = {
+"Click": SubResource("Animation_c7n5n")
+}
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0vqjl"]
+radius = 0.242688
+
+[node name="Inazuma Eleven 3D" type="Node3D"]
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(14.4098, 0, 0, 0, 0.00811265, 0, 0, 0, 9.043, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ygqou")
+use_collision = true
+size = Vector3(1, 1, 6.04259)
+
+[node name="Camera" type="Camera3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.669947, 0.742409, 0, -0.742409, 0.669947, -0.0603545, 22.8951, 34.6055)
+current = true
+fov = 46.3
+size = 12.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Team A" type="Node" parent="."]
+script = ExtResource("1_76dm7")
+
+[node name="Player 1" parent="Team A" groups=["Team"] instance=ExtResource("1_7ehee")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 17.589)
+
+[node name="PlayerArea" type="Area2D" parent="Team A/Player 1"]
+script = ExtResource("2_adj88")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Team A/Player 1/PlayerArea"]
+shape = SubResource("CircleShape2D_vn4gy")
+
+[node name="Player 2" parent="Team A" groups=["Team"] instance=ExtResource("1_7ehee")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.60685, 0, 22.244)
+
+[node name="Player 3" parent="Team A" groups=["Team"] instance=ExtResource("1_7ehee")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.61785, 0.108825, 22.2579)
+
+[node name="InputManager" type="Node" parent="." node_paths=PackedStringArray("team_A")]
+editor_description = "Esta clase recibe todo el input del juego y lo envia a los jugadores"
+script = ExtResource("3_l4bio")
+team_A = NodePath("../Team A")
+
+[node name="RaycastManager" type="Node3D" parent="InputManager"]
+editor_description = "Este nodo se encarga de disparar todos los raycasts necesarios para calcular el movimiento de los personajes"
+script = ExtResource("4_c4to2")
+
+[node name="Marker" type="Sprite3D" parent="InputManager"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.0283294, 13.796)
+modulate = Color(1, 1, 1, 0)
+pixel_size = 0.0005
+texture = ExtResource("5_q46iv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="InputManager/Marker"]
+libraries = {
+"": SubResource("AnimationLibrary_1j3ln")
+}
+
+[node name="Ball" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14895, 15.1479)
+collision_layer = 2
+collision_mask = 2
+radius = 0.15
+script = ExtResource("6_1vdqp")
+
+[node name="Area3D" type="Area3D" parent="Ball" groups=["Ball"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ball/Area3D"]
+shape = SubResource("SphereShape3D_0vqjl")

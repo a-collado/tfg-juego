@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://4ljr3vprlh61"]
+
+[ext_resource type="PackedScene" uid="uid://cdfbsgfd4sj13" path="res://Objects/player.tscn" id="2_rxvg6"]
+
+[node name="Inazuma Eleven" type="Node2D"]
+
+[node name="TeamManager" type="Node2D" parent="."]
+
+[node name="Player" parent="TeamManager" groups=["Team"] instance=ExtResource("2_rxvg6")]
+
+[node name="Player2" parent="TeamManager" groups=["Team"] instance=ExtResource("2_rxvg6")]
+position = Vector2(-387, 517)
+
+[node name="Player3" parent="TeamManager" groups=["Team"] instance=ExtResource("2_rxvg6")]
+position = Vector2(372, 529)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.63, 0.63)
+metadata/_edit_lock_ = true

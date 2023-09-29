@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdfbsgfd4sj13"]
+
+[ext_resource type="Script" path="res://Scripts/Player2D.gd" id="1_f2h7o"]
+[ext_resource type="Texture2D" uid="uid://bdidh73s4pbca" path="res://Assets/icon.svg" id="1_gq5q8"]
+[ext_resource type="Script" path="res://Scripts/PlayerArea.gd" id="3_ttwe4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ovst1"]
+radius = 105.005
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_f2h7o")
+
+[node name="Path2D" type="Path2D" parent="."]
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+loop = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D"]
+texture = ExtResource("1_gq5q8")
+
+[node name="PlayerArea" type="Area2D" parent="Path2D/PathFollow2D/Sprite2D"]
+script = ExtResource("3_ttwe4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Sprite2D/PlayerArea"]
+shape = SubResource("CircleShape2D_ovst1")
+
+[connection signal="player_pressed" from="Path2D/PathFollow2D/Sprite2D/PlayerArea" to="." method="_on_area_2d_player_pressed"]

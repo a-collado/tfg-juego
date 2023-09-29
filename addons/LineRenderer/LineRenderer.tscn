@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://25pl1mvpb0ct"]
+
+[ext_resource type="Script" path="res://addons/LineRenderer/LineRenderer.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c2iu0x03c5wr8" path="res://Assets/line_rect.png" id="1_2sh87"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rq44"]
+transparency = 1
+albedo_color = Color(0.968734, 1, 0.607706, 1)
+albedo_texture = ExtResource("1_2sh87")
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wnu2f"]
+
+[node name="LineRenderer" type="MeshInstance3D"]
+material_override = SubResource("StandardMaterial3D_2rq44")
+mesh = SubResource("ImmediateMesh_wnu2f")
+script = ExtResource("1")
+startThickness = 0.5
+endThickness = 0.5
