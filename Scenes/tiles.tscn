@@ -1,0 +1,1212 @@
+[gd_scene load_steps=303 format=3 uid="uid://btnot4nl524cq"]
+
+[ext_resource type="ArrayMesh" uid="uid://drfd4gw1wh8cw" path="res://addons/kenney_road_pack/roadTile_001.obj" id="1_huje0"]
+[ext_resource type="ArrayMesh" uid="uid://qrisy1gdxmnw" path="res://addons/kenney_road_pack/roadTile_002.obj" id="2_t0psy"]
+[ext_resource type="ArrayMesh" uid="uid://doccdfw0m7oo5" path="res://addons/kenney_road_pack/roadTile_003.obj" id="3_yuo0e"]
+[ext_resource type="ArrayMesh" uid="uid://d2oxg2jhg04to" path="res://addons/kenney_road_pack/roadTile_004.obj" id="4_50q86"]
+[ext_resource type="ArrayMesh" uid="uid://blumhi1x4nnyh" path="res://addons/kenney_road_pack/roadTile_005.obj" id="5_i1t7s"]
+[ext_resource type="ArrayMesh" uid="uid://b0f1a85g1l18h" path="res://addons/kenney_road_pack/roadTile_006.obj" id="6_e4dwa"]
+[ext_resource type="ArrayMesh" uid="uid://cki7ifjy8ug1e" path="res://addons/kenney_road_pack/roadTile_007.obj" id="7_mbdhq"]
+[ext_resource type="ArrayMesh" uid="uid://dapt7phj2tc1j" path="res://addons/kenney_road_pack/roadTile_008.obj" id="8_nrdo7"]
+[ext_resource type="ArrayMesh" uid="uid://hhasn61fy2k1" path="res://addons/kenney_road_pack/roadTile_009.obj" id="9_ldn4f"]
+[ext_resource type="ArrayMesh" uid="uid://b0t05b6sx5o4n" path="res://addons/kenney_road_pack/roadTile_010.obj" id="10_5yvg8"]
+[ext_resource type="ArrayMesh" uid="uid://danbwjduqcb73" path="res://addons/kenney_road_pack/roadTile_011.obj" id="11_lmt2p"]
+[ext_resource type="ArrayMesh" uid="uid://bqvsragd1gf1p" path="res://addons/kenney_road_pack/roadTile_012.obj" id="12_4jm68"]
+[ext_resource type="ArrayMesh" uid="uid://25nn75sr6jb6" path="res://addons/kenney_road_pack/roadTile_013.obj" id="13_cvxde"]
+[ext_resource type="ArrayMesh" uid="uid://pmrxfprk6nlc" path="res://addons/kenney_road_pack/roadTile_014.obj" id="14_oe41n"]
+[ext_resource type="ArrayMesh" uid="uid://jxjp3h5k08ik" path="res://addons/kenney_road_pack/roadTile_015.obj" id="15_e82im"]
+[ext_resource type="ArrayMesh" uid="uid://cghc4tcqmhtqu" path="res://addons/kenney_road_pack/roadTile_016.obj" id="16_1yxb0"]
+[ext_resource type="ArrayMesh" uid="uid://c8qhs4kenugwg" path="res://addons/kenney_road_pack/roadTile_017.obj" id="17_kejir"]
+[ext_resource type="ArrayMesh" uid="uid://bw4v1mng3emvs" path="res://addons/kenney_road_pack/roadTile_018.obj" id="18_qstch"]
+[ext_resource type="ArrayMesh" uid="uid://bvpmflhu48qn6" path="res://addons/kenney_road_pack/roadTile_019.obj" id="19_dtlp6"]
+[ext_resource type="ArrayMesh" uid="uid://psatoj1ae3b1" path="res://addons/kenney_road_pack/roadTile_020.obj" id="20_b04gs"]
+[ext_resource type="ArrayMesh" uid="uid://drk3fkvhlpcd6" path="res://addons/kenney_road_pack/roadTile_021.obj" id="21_ng1q6"]
+[ext_resource type="ArrayMesh" uid="uid://bvm5ncjfd7ead" path="res://addons/kenney_road_pack/roadTile_022.obj" id="22_5kacu"]
+[ext_resource type="ArrayMesh" uid="uid://d0lvurmv71imh" path="res://addons/kenney_road_pack/roadTile_023.obj" id="23_0xcy0"]
+[ext_resource type="ArrayMesh" uid="uid://dp310bq5te0w4" path="res://addons/kenney_road_pack/roadTile_024.obj" id="24_lpocq"]
+[ext_resource type="ArrayMesh" uid="uid://cafi100hsopsj" path="res://addons/kenney_road_pack/roadTile_025.obj" id="25_c8mmj"]
+[ext_resource type="ArrayMesh" uid="uid://c3d3msrr185so" path="res://addons/kenney_road_pack/roadTile_026.obj" id="26_4fls7"]
+[ext_resource type="ArrayMesh" uid="uid://37v7cpe3s8r4" path="res://addons/kenney_road_pack/roadTile_027.obj" id="27_s2yuv"]
+[ext_resource type="ArrayMesh" uid="uid://bgxc2etmkeuhc" path="res://addons/kenney_road_pack/roadTile_028.obj" id="28_7p053"]
+[ext_resource type="ArrayMesh" uid="uid://cjqjvsm73i21r" path="res://addons/kenney_road_pack/roadTile_029.obj" id="29_daruw"]
+[ext_resource type="ArrayMesh" uid="uid://dn441rxcwrbj6" path="res://addons/kenney_road_pack/roadTile_030.obj" id="30_cvi0j"]
+[ext_resource type="ArrayMesh" uid="uid://cy3c7e2ki2i1c" path="res://addons/kenney_road_pack/roadTile_031.obj" id="31_wyqmn"]
+[ext_resource type="ArrayMesh" uid="uid://dutevsguftgwj" path="res://addons/kenney_road_pack/roadTile_032.obj" id="32_b4hw4"]
+[ext_resource type="ArrayMesh" uid="uid://dfqggb7uea32f" path="res://addons/kenney_road_pack/roadTile_033.obj" id="33_tc5o5"]
+[ext_resource type="ArrayMesh" uid="uid://w7wh0gfg8kek" path="res://addons/kenney_road_pack/roadTile_034.obj" id="34_djhfl"]
+[ext_resource type="ArrayMesh" uid="uid://bgnjjbbe17e2m" path="res://addons/kenney_road_pack/roadTile_035.obj" id="35_hulsm"]
+[ext_resource type="ArrayMesh" uid="uid://bxdljmi3nuv82" path="res://addons/kenney_road_pack/roadTile_036.obj" id="36_f62uf"]
+[ext_resource type="ArrayMesh" uid="uid://bv2qf8xf7by68" path="res://addons/kenney_road_pack/roadTile_037.obj" id="37_1g2x3"]
+[ext_resource type="ArrayMesh" uid="uid://b2h5p38f5rpc3" path="res://addons/kenney_road_pack/roadTile_038.obj" id="38_d41ew"]
+[ext_resource type="ArrayMesh" uid="uid://c8r512ywyvhy3" path="res://addons/kenney_road_pack/roadTile_039.obj" id="39_sebh4"]
+[ext_resource type="ArrayMesh" uid="uid://v5818wlflgwu" path="res://addons/kenney_road_pack/roadTile_040.obj" id="40_r3umy"]
+[ext_resource type="ArrayMesh" uid="uid://dkq2622mjov4c" path="res://addons/kenney_road_pack/roadTile_041.obj" id="41_vc83n"]
+[ext_resource type="ArrayMesh" uid="uid://dtngh4c86nnd6" path="res://addons/kenney_road_pack/roadTile_042.obj" id="42_a2g8v"]
+[ext_resource type="ArrayMesh" uid="uid://cdotagrfgx2yq" path="res://addons/kenney_road_pack/roadTile_043.obj" id="43_wjqd7"]
+[ext_resource type="ArrayMesh" uid="uid://cev68837yrk2e" path="res://addons/kenney_road_pack/roadTile_044.obj" id="44_p552f"]
+[ext_resource type="ArrayMesh" uid="uid://dk0qhtcehbxe6" path="res://addons/kenney_road_pack/roadTile_045.obj" id="45_w8ip0"]
+[ext_resource type="ArrayMesh" uid="uid://dts40oc8ux8n7" path="res://addons/kenney_road_pack/roadTile_046.obj" id="46_2p7ic"]
+[ext_resource type="ArrayMesh" uid="uid://d2x3oqyf5tcwp" path="res://addons/kenney_road_pack/roadTile_047.obj" id="47_cemtt"]
+[ext_resource type="ArrayMesh" uid="uid://byi4w4k1yhqiq" path="res://addons/kenney_road_pack/roadTile_048.obj" id="48_17m8e"]
+[ext_resource type="ArrayMesh" uid="uid://b258ei8lvjqnh" path="res://addons/kenney_road_pack/roadTile_049.obj" id="49_anmi0"]
+[ext_resource type="ArrayMesh" uid="uid://bdretm1rk0g2h" path="res://addons/kenney_road_pack/roadTile_050.obj" id="50_0gp2f"]
+[ext_resource type="ArrayMesh" uid="uid://cplhcb4desdhs" path="res://addons/kenney_road_pack/roadTile_051.obj" id="51_mchjl"]
+[ext_resource type="ArrayMesh" uid="uid://r8uhw1xiwb3d" path="res://addons/kenney_road_pack/roadTile_052.obj" id="52_t4h1r"]
+[ext_resource type="ArrayMesh" uid="uid://csxxwauj0o1x0" path="res://addons/kenney_road_pack/roadTile_053.obj" id="53_k0mjb"]
+[ext_resource type="ArrayMesh" uid="uid://dolcovilirs7x" path="res://addons/kenney_road_pack/roadTile_054.obj" id="54_e0866"]
+[ext_resource type="ArrayMesh" uid="uid://dgk23ac2l2nsi" path="res://addons/kenney_road_pack/roadTile_055.obj" id="55_7l5fo"]
+[ext_resource type="ArrayMesh" uid="uid://24f6j3ou1pr4" path="res://addons/kenney_road_pack/roadTile_056.obj" id="56_77avm"]
+[ext_resource type="ArrayMesh" uid="uid://bo8jvr8pe3cib" path="res://addons/kenney_road_pack/roadTile_057.obj" id="57_pnev3"]
+[ext_resource type="ArrayMesh" uid="uid://cpecajg6c1o15" path="res://addons/kenney_road_pack/roadTile_058.obj" id="58_d4qp8"]
+[ext_resource type="ArrayMesh" uid="uid://ckttldfvgq1hi" path="res://addons/kenney_road_pack/roadTile_059.obj" id="59_634ma"]
+[ext_resource type="ArrayMesh" uid="uid://bt3y5pddrlafh" path="res://addons/kenney_road_pack/roadTile_060.obj" id="60_24hl5"]
+[ext_resource type="ArrayMesh" uid="uid://d0rrsa8rsm4hx" path="res://addons/kenney_road_pack/roadTile_061.obj" id="61_2fylm"]
+[ext_resource type="ArrayMesh" uid="uid://bywccu1n1rj71" path="res://addons/kenney_road_pack/roadTile_062.obj" id="62_bl6uo"]
+[ext_resource type="ArrayMesh" uid="uid://bqr37ihukbeqw" path="res://addons/kenney_road_pack/roadTile_063.obj" id="63_dljoo"]
+[ext_resource type="ArrayMesh" uid="uid://pyas16dfebd4" path="res://addons/kenney_road_pack/roadTile_064.obj" id="64_lorw0"]
+[ext_resource type="ArrayMesh" uid="uid://basw6bbikre7w" path="res://addons/kenney_road_pack/roadTile_065.obj" id="65_i7txn"]
+[ext_resource type="ArrayMesh" uid="uid://cebdptgrfpmd6" path="res://addons/kenney_road_pack/roadTile_066.obj" id="66_fpb3r"]
+[ext_resource type="ArrayMesh" uid="uid://b0s4gq0jraynl" path="res://addons/kenney_road_pack/roadTile_067.obj" id="67_4i75e"]
+[ext_resource type="ArrayMesh" uid="uid://bgijp6m0qjbny" path="res://addons/kenney_road_pack/roadTile_068.obj" id="68_m6i5k"]
+[ext_resource type="ArrayMesh" uid="uid://bpcvmgsh51uyt" path="res://addons/kenney_road_pack/roadTile_069.obj" id="69_k1dto"]
+[ext_resource type="ArrayMesh" uid="uid://by2m2vlhrj2vy" path="res://addons/kenney_road_pack/roadTile_070.obj" id="70_tqgpi"]
+[ext_resource type="ArrayMesh" uid="uid://b0yxhj4cu81lx" path="res://addons/kenney_road_pack/roadTile_071.obj" id="71_bg7b2"]
+[ext_resource type="ArrayMesh" uid="uid://cjtbow14s5bre" path="res://addons/kenney_road_pack/roadTile_072.obj" id="72_naojx"]
+[ext_resource type="ArrayMesh" uid="uid://bu70pjmnv3a63" path="res://addons/kenney_road_pack/roadTile_073.obj" id="73_mb3l6"]
+[ext_resource type="ArrayMesh" uid="uid://cjdb5hwlk38cc" path="res://addons/kenney_road_pack/roadTile_074.obj" id="74_p14ci"]
+[ext_resource type="ArrayMesh" uid="uid://yp428flgpm0a" path="res://addons/kenney_road_pack/roadTile_075.obj" id="75_u7pec"]
+[ext_resource type="ArrayMesh" uid="uid://dg4rgf1dgcu3b" path="res://addons/kenney_road_pack/roadTile_076.obj" id="76_5vl1e"]
+[ext_resource type="ArrayMesh" uid="uid://bhmrfddwilbb7" path="res://addons/kenney_road_pack/roadTile_077.obj" id="77_d7y8w"]
+[ext_resource type="ArrayMesh" uid="uid://5e1lv5dgdek0" path="res://addons/kenney_road_pack/roadTile_078.obj" id="78_imgof"]
+[ext_resource type="ArrayMesh" uid="uid://c1axytm4xa6ws" path="res://addons/kenney_road_pack/roadTile_079.obj" id="79_gookd"]
+[ext_resource type="ArrayMesh" uid="uid://d3rua1251dwbx" path="res://addons/kenney_road_pack/roadTile_080.obj" id="80_5k50o"]
+[ext_resource type="ArrayMesh" uid="uid://b20q4vt3jer2u" path="res://addons/kenney_road_pack/roadTile_081.obj" id="81_0mt40"]
+[ext_resource type="ArrayMesh" uid="uid://t80ll5lux5xw" path="res://addons/kenney_road_pack/roadTile_082.obj" id="82_62r1d"]
+[ext_resource type="ArrayMesh" uid="uid://4fskog6wyh0c" path="res://addons/kenney_road_pack/roadTile_083.obj" id="83_lr4lf"]
+[ext_resource type="ArrayMesh" uid="uid://ba3wpguk85m60" path="res://addons/kenney_road_pack/roadTile_084.obj" id="84_gt4mm"]
+[ext_resource type="ArrayMesh" uid="uid://scosb473awiw" path="res://addons/kenney_road_pack/roadTile_085.obj" id="85_ff5eq"]
+[ext_resource type="ArrayMesh" uid="uid://ct3avlw12d7jm" path="res://addons/kenney_road_pack/roadTile_086.obj" id="86_mkmcw"]
+[ext_resource type="ArrayMesh" uid="uid://b03vrq6e14ivf" path="res://addons/kenney_road_pack/roadTile_087.obj" id="87_j2mo8"]
+[ext_resource type="ArrayMesh" uid="uid://b5vm5wvaypkay" path="res://addons/kenney_road_pack/roadTile_088.obj" id="88_sf873"]
+[ext_resource type="ArrayMesh" uid="uid://rd28j7xc2nh1" path="res://addons/kenney_road_pack/roadTile_089.obj" id="89_fjsnk"]
+[ext_resource type="ArrayMesh" uid="uid://bguhqocybldoy" path="res://addons/kenney_road_pack/roadTile_090.obj" id="90_nrh50"]
+[ext_resource type="ArrayMesh" uid="uid://dr4wsx4rwatc3" path="res://addons/kenney_road_pack/roadTile_091.obj" id="91_jrfdn"]
+[ext_resource type="ArrayMesh" uid="uid://c6nyt2cf03rnh" path="res://addons/kenney_road_pack/roadTile_092.obj" id="92_6skbi"]
+[ext_resource type="ArrayMesh" uid="uid://cikhxptyohp7j" path="res://addons/kenney_road_pack/roadTile_093.obj" id="93_8h20u"]
+[ext_resource type="ArrayMesh" uid="uid://dtvhg7qi3tkwb" path="res://addons/kenney_road_pack/roadTile_094.obj" id="94_yf8ub"]
+[ext_resource type="ArrayMesh" uid="uid://t8ma8wyc66rv" path="res://addons/kenney_road_pack/roadTile_095.obj" id="95_cmy7v"]
+[ext_resource type="ArrayMesh" uid="uid://cphgkbx0fuph7" path="res://addons/kenney_road_pack/roadTile_096.obj" id="96_v6662"]
+[ext_resource type="ArrayMesh" uid="uid://7txk4h23k8ig" path="res://addons/kenney_road_pack/roadTile_097.obj" id="97_bsiuo"]
+[ext_resource type="ArrayMesh" uid="uid://bb1fceo8i6by2" path="res://addons/kenney_road_pack/roadTile_098.obj" id="98_uy4xj"]
+[ext_resource type="ArrayMesh" uid="uid://bo7qwpmb5tjvm" path="res://addons/kenney_road_pack/roadTile_099.obj" id="99_dw55o"]
+[ext_resource type="ArrayMesh" uid="uid://bdwcb327jwslq" path="res://addons/kenney_road_pack/roadTile_100.obj" id="100_03yyx"]
+[ext_resource type="ArrayMesh" uid="uid://dvols5hdwgo2y" path="res://addons/kenney_road_pack/roadTile_101.obj" id="101_bgr5e"]
+[ext_resource type="ArrayMesh" uid="uid://caij6mgu7ubgc" path="res://addons/kenney_road_pack/roadTile_102.obj" id="102_nj7na"]
+[ext_resource type="ArrayMesh" uid="uid://bekm6455nx278" path="res://addons/kenney_road_pack/roadTile_103.obj" id="103_lqmjk"]
+[ext_resource type="ArrayMesh" uid="uid://cq5sjsoqyei5i" path="res://addons/kenney_road_pack/roadTile_104.obj" id="104_61x8x"]
+[ext_resource type="ArrayMesh" uid="uid://d1ljhyf1e603j" path="res://addons/kenney_road_pack/roadTile_105.obj" id="105_ptda2"]
+[ext_resource type="ArrayMesh" uid="uid://co8mn1om267ym" path="res://addons/kenney_road_pack/roadTile_106.obj" id="106_pljdb"]
+[ext_resource type="ArrayMesh" uid="uid://c47m4idp7jkg8" path="res://addons/kenney_road_pack/roadTile_107.obj" id="107_k3c2c"]
+[ext_resource type="ArrayMesh" uid="uid://c58j6f28710ps" path="res://addons/kenney_road_pack/roadTile_108.obj" id="108_p30pq"]
+[ext_resource type="ArrayMesh" uid="uid://ddy0rdrcqve8c" path="res://addons/kenney_road_pack/roadTile_109.obj" id="109_c6bay"]
+[ext_resource type="ArrayMesh" uid="uid://dku771lhjf108" path="res://addons/kenney_road_pack/roadTile_110.obj" id="110_1j5if"]
+[ext_resource type="ArrayMesh" uid="uid://ns1ythqmth71" path="res://addons/kenney_road_pack/roadTile_111.obj" id="111_demhc"]
+[ext_resource type="ArrayMesh" uid="uid://5pwik1pbowxo" path="res://addons/kenney_road_pack/roadTile_112.obj" id="112_s40iq"]
+[ext_resource type="ArrayMesh" uid="uid://c407vouk7pvdf" path="res://addons/kenney_road_pack/roadTile_113.obj" id="113_4qt1q"]
+[ext_resource type="ArrayMesh" uid="uid://decsc08vci282" path="res://addons/kenney_road_pack/roadTile_114.obj" id="114_vaoca"]
+[ext_resource type="ArrayMesh" uid="uid://com2wfdyxxirh" path="res://addons/kenney_road_pack/roadTile_115.obj" id="115_a4gsh"]
+[ext_resource type="ArrayMesh" uid="uid://cmtcpxeos7k1x" path="res://addons/kenney_road_pack/roadTile_116.obj" id="116_4ulqa"]
+[ext_resource type="ArrayMesh" uid="uid://cfbgh0is4jklr" path="res://addons/kenney_road_pack/roadTile_117.obj" id="117_wx5et"]
+[ext_resource type="ArrayMesh" uid="uid://bo3rqe2ftx37i" path="res://addons/kenney_road_pack/roadTile_118.obj" id="118_ds6nb"]
+[ext_resource type="ArrayMesh" uid="uid://bwbhtqtfan6ll" path="res://addons/kenney_road_pack/roadTile_119.obj" id="119_t51ao"]
+[ext_resource type="ArrayMesh" uid="uid://c2ormqrabjdea" path="res://addons/kenney_road_pack/roadTile_120.obj" id="120_32lsv"]
+[ext_resource type="ArrayMesh" uid="uid://dpq0qxmoacx88" path="res://addons/kenney_road_pack/roadTile_121.obj" id="121_phv2f"]
+[ext_resource type="ArrayMesh" uid="uid://cu322dn1sjg1t" path="res://addons/kenney_road_pack/roadTile_122.obj" id="122_jqpce"]
+[ext_resource type="ArrayMesh" uid="uid://b4jl8ltsqjl06" path="res://addons/kenney_road_pack/roadTile_123.obj" id="123_lkfkj"]
+[ext_resource type="ArrayMesh" uid="uid://b51xo1ljw2drt" path="res://addons/kenney_road_pack/roadTile_124.obj" id="124_6f3j5"]
+[ext_resource type="ArrayMesh" uid="uid://bnmtf6krewcr0" path="res://addons/kenney_road_pack/roadTile_125.obj" id="125_dwar1"]
+[ext_resource type="ArrayMesh" uid="uid://eif73eramhuq" path="res://addons/kenney_road_pack/roadTile_126.obj" id="126_34nem"]
+[ext_resource type="ArrayMesh" uid="uid://cknhpxfdqyx3v" path="res://addons/kenney_road_pack/roadTile_127.obj" id="127_qa5qa"]
+[ext_resource type="ArrayMesh" uid="uid://8kvrdtyb3ar1" path="res://addons/kenney_road_pack/roadTile_128.obj" id="128_mcfp8"]
+[ext_resource type="ArrayMesh" uid="uid://bcfj6bo32drjm" path="res://addons/kenney_road_pack/roadTile_129.obj" id="129_ssve5"]
+[ext_resource type="ArrayMesh" uid="uid://bedneygidb4pm" path="res://addons/kenney_road_pack/roadTile_130.obj" id="130_usphd"]
+[ext_resource type="ArrayMesh" uid="uid://b20oreh04c2ph" path="res://addons/kenney_road_pack/roadTile_131.obj" id="131_an3gw"]
+[ext_resource type="ArrayMesh" uid="uid://c1e2qpaad5kuk" path="res://addons/kenney_road_pack/roadTile_132.obj" id="132_j3wgr"]
+[ext_resource type="ArrayMesh" uid="uid://cjv05hncaxwuw" path="res://addons/kenney_road_pack/roadTile_133.obj" id="133_02hsu"]
+[ext_resource type="ArrayMesh" uid="uid://b3vphor88gke1" path="res://addons/kenney_road_pack/roadTile_134.obj" id="134_60p8u"]
+[ext_resource type="ArrayMesh" uid="uid://24bhjay2abjd" path="res://addons/kenney_road_pack/roadTile_135.obj" id="135_5rqky"]
+[ext_resource type="ArrayMesh" uid="uid://cutp7lf55271h" path="res://addons/kenney_road_pack/roadTile_136.obj" id="136_57dmv"]
+[ext_resource type="ArrayMesh" uid="uid://rbde3vuxs5lv" path="res://addons/kenney_road_pack/roadTile_137.obj" id="137_abhpv"]
+[ext_resource type="ArrayMesh" uid="uid://1j7c0glaxjuq" path="res://addons/kenney_road_pack/roadTile_138.obj" id="138_kdrv3"]
+[ext_resource type="ArrayMesh" uid="uid://bmlvpudk3d55" path="res://addons/kenney_road_pack/roadTile_139.obj" id="139_g2fp0"]
+[ext_resource type="ArrayMesh" uid="uid://gcrbbw0o3yln" path="res://addons/kenney_road_pack/roadTile_140.obj" id="140_yisd0"]
+[ext_resource type="ArrayMesh" uid="uid://cvmuyyalsa7jb" path="res://addons/kenney_road_pack/roadTile_141.obj" id="141_65uqo"]
+[ext_resource type="ArrayMesh" uid="uid://dlpd3s0jxnp42" path="res://addons/kenney_road_pack/roadTile_142.obj" id="142_l0qao"]
+[ext_resource type="ArrayMesh" uid="uid://bhr7vddxexi2u" path="res://addons/kenney_road_pack/roadTile_143.obj" id="143_6wfjp"]
+[ext_resource type="ArrayMesh" uid="uid://bi1vgho5x2lsb" path="res://addons/kenney_road_pack/roadTile_144.obj" id="144_li75j"]
+[ext_resource type="ArrayMesh" uid="uid://dmoplrgcy41c3" path="res://addons/kenney_road_pack/roadTile_145.obj" id="145_b4miu"]
+[ext_resource type="ArrayMesh" uid="uid://ch82qowdua6ol" path="res://addons/kenney_road_pack/roadTile_146.obj" id="146_hgute"]
+[ext_resource type="ArrayMesh" uid="uid://crf3emothfkxp" path="res://addons/kenney_road_pack/roadTile_147.obj" id="147_e1yx3"]
+[ext_resource type="ArrayMesh" uid="uid://cww6at1dd7b3a" path="res://addons/kenney_road_pack/roadTile_148.obj" id="148_7c36s"]
+[ext_resource type="ArrayMesh" uid="uid://u3apryxwkmhu" path="res://addons/kenney_road_pack/roadTile_149.obj" id="149_ipg5t"]
+[ext_resource type="ArrayMesh" uid="uid://6ek7i36pe2de" path="res://addons/kenney_road_pack/roadTile_150.obj" id="150_fbhh0"]
+[ext_resource type="ArrayMesh" uid="uid://bh2x7u1acwtxg" path="res://addons/kenney_road_pack/roadTile_151.obj" id="151_w26et"]
+[ext_resource type="ArrayMesh" uid="uid://ilxk8mfx32wg" path="res://addons/kenney_road_pack/roadTile_152.obj" id="152_cj881"]
+[ext_resource type="ArrayMesh" uid="uid://cigdxeid5jmc2" path="res://addons/kenney_road_pack/roadTile_153.obj" id="153_cqjhb"]
+[ext_resource type="ArrayMesh" uid="uid://mmva552arehi" path="res://addons/kenney_road_pack/roadTile_154.obj" id="154_f72kb"]
+[ext_resource type="ArrayMesh" uid="uid://dy6345lnqps5m" path="res://addons/kenney_road_pack/roadTile_155.obj" id="155_s5fw8"]
+[ext_resource type="ArrayMesh" uid="uid://qdw4krd0s64q" path="res://addons/kenney_road_pack/roadTile_156.obj" id="156_7yl6q"]
+[ext_resource type="ArrayMesh" uid="uid://dyqih06oyhbb8" path="res://addons/kenney_road_pack/roadTile_157.obj" id="157_7bw7q"]
+[ext_resource type="ArrayMesh" uid="uid://by2xf5y1x7rex" path="res://addons/kenney_road_pack/roadTile_158.obj" id="158_fy1p3"]
+[ext_resource type="ArrayMesh" uid="uid://ctpofjpe7ko1f" path="res://addons/kenney_road_pack/roadTile_159.obj" id="159_ktbxh"]
+[ext_resource type="ArrayMesh" uid="uid://ddeg0fuleo282" path="res://addons/kenney_road_pack/roadTile_160.obj" id="160_mi8ox"]
+[ext_resource type="ArrayMesh" uid="uid://dytwu7ibltp2u" path="res://addons/kenney_road_pack/roadTile_161.obj" id="161_p26hy"]
+[ext_resource type="ArrayMesh" uid="uid://icubg6brwgyn" path="res://addons/kenney_road_pack/roadTile_162.obj" id="162_io0kx"]
+[ext_resource type="ArrayMesh" uid="uid://c7qs32cegka56" path="res://addons/kenney_road_pack/roadTile_163.obj" id="163_ji4g0"]
+[ext_resource type="ArrayMesh" uid="uid://d2u6t8n2qam07" path="res://addons/kenney_road_pack/roadTile_164.obj" id="164_djm5t"]
+[ext_resource type="ArrayMesh" uid="uid://b7oe3ccmbphgh" path="res://addons/kenney_road_pack/roadTile_165.obj" id="165_0lemt"]
+[ext_resource type="ArrayMesh" uid="uid://dba4jw3l7y3x3" path="res://addons/kenney_road_pack/roadTile_166.obj" id="166_g646a"]
+[ext_resource type="ArrayMesh" uid="uid://cgeg3rh6uvmg1" path="res://addons/kenney_road_pack/roadTile_167.obj" id="167_chru5"]
+[ext_resource type="ArrayMesh" uid="uid://cnl0llryb4is6" path="res://addons/kenney_road_pack/roadTile_168.obj" id="168_y3yp0"]
+[ext_resource type="ArrayMesh" uid="uid://cjsj5qah5sucq" path="res://addons/kenney_road_pack/roadTile_169.obj" id="169_nessb"]
+[ext_resource type="ArrayMesh" uid="uid://o2y8xvpruh5c" path="res://addons/kenney_road_pack/roadTile_170.obj" id="170_wwkxa"]
+[ext_resource type="ArrayMesh" uid="uid://dbiqhqtmbqg2" path="res://addons/kenney_road_pack/roadTile_171.obj" id="171_pni6f"]
+[ext_resource type="ArrayMesh" uid="uid://t0m3v7bk6xgm" path="res://addons/kenney_road_pack/roadTile_172.obj" id="172_dea80"]
+[ext_resource type="ArrayMesh" uid="uid://co1vesqebujd1" path="res://addons/kenney_road_pack/roadTile_173.obj" id="173_1g2a4"]
+[ext_resource type="ArrayMesh" uid="uid://bfy8mjialulko" path="res://addons/kenney_road_pack/roadTile_174.obj" id="174_pidc7"]
+[ext_resource type="ArrayMesh" uid="uid://fpfuhyvdomdd" path="res://addons/kenney_road_pack/roadTile_175.obj" id="175_kfnld"]
+[ext_resource type="ArrayMesh" uid="uid://cwy3aupr7qgq0" path="res://addons/kenney_road_pack/roadTile_176.obj" id="176_2uhxb"]
+[ext_resource type="ArrayMesh" uid="uid://dwhxvxjjuwudn" path="res://addons/kenney_road_pack/roadTile_177.obj" id="177_sgdgp"]
+[ext_resource type="ArrayMesh" uid="uid://c46xnykktq88m" path="res://addons/kenney_road_pack/roadTile_178.obj" id="178_gg2w6"]
+[ext_resource type="ArrayMesh" uid="uid://r05niov0e4xg" path="res://addons/kenney_road_pack/roadTile_179.obj" id="179_1yl0l"]
+[ext_resource type="ArrayMesh" uid="uid://c4h4um368flgn" path="res://addons/kenney_road_pack/roadTile_180.obj" id="180_8vknw"]
+[ext_resource type="ArrayMesh" uid="uid://bkwo6nr212h8p" path="res://addons/kenney_road_pack/roadTile_181.obj" id="181_llsgo"]
+[ext_resource type="ArrayMesh" uid="uid://beiid3nt3uxbp" path="res://addons/kenney_road_pack/roadTile_182.obj" id="182_txx3m"]
+[ext_resource type="ArrayMesh" uid="uid://dp7f8lf7336v8" path="res://addons/kenney_road_pack/roadTile_183.obj" id="183_5pqvo"]
+[ext_resource type="ArrayMesh" uid="uid://dw25tf0jiwnk6" path="res://addons/kenney_road_pack/roadTile_184.obj" id="184_eydvw"]
+[ext_resource type="ArrayMesh" uid="uid://xuxe8nkkprxu" path="res://addons/kenney_road_pack/roadTile_185.obj" id="185_37g1i"]
+[ext_resource type="ArrayMesh" uid="uid://81timax12qmj" path="res://addons/kenney_road_pack/roadTile_186.obj" id="186_g1uc3"]
+[ext_resource type="ArrayMesh" uid="uid://6f4741ak8r2u" path="res://addons/kenney_road_pack/roadTile_187.obj" id="187_ytla7"]
+[ext_resource type="ArrayMesh" uid="uid://djqwb5imu3wgf" path="res://addons/kenney_road_pack/roadTile_188.obj" id="188_ht6kq"]
+[ext_resource type="ArrayMesh" uid="uid://s63xbfw0mlc4" path="res://addons/kenney_road_pack/roadTile_189.obj" id="189_r6rbh"]
+[ext_resource type="ArrayMesh" uid="uid://5n28tn7prmra" path="res://addons/kenney_road_pack/roadTile_190.obj" id="190_o0mhb"]
+[ext_resource type="ArrayMesh" uid="uid://e8sr48f36qu8" path="res://addons/kenney_road_pack/roadTile_191.obj" id="191_h5c1h"]
+[ext_resource type="ArrayMesh" uid="uid://b2kjv8l868n" path="res://addons/kenney_road_pack/roadTile_192.obj" id="192_upgqg"]
+[ext_resource type="ArrayMesh" uid="uid://bso553eq5blmx" path="res://addons/kenney_road_pack/roadTile_193.obj" id="193_n1hn2"]
+[ext_resource type="ArrayMesh" uid="uid://bdnaxjk8x7imi" path="res://addons/kenney_road_pack/roadTile_194.obj" id="194_csf08"]
+[ext_resource type="ArrayMesh" uid="uid://2ownmcdqh686" path="res://addons/kenney_road_pack/roadTile_195.obj" id="195_72kgo"]
+[ext_resource type="ArrayMesh" uid="uid://bwxbdgq6eknq5" path="res://addons/kenney_road_pack/roadTile_196.obj" id="196_xnfbq"]
+[ext_resource type="ArrayMesh" uid="uid://caa1gxqyaly2o" path="res://addons/kenney_road_pack/roadTile_197.obj" id="197_15t1b"]
+[ext_resource type="ArrayMesh" uid="uid://taohc5jr27q" path="res://addons/kenney_road_pack/roadTile_198.obj" id="198_nun8a"]
+[ext_resource type="ArrayMesh" uid="uid://48nnh3ltq7e7" path="res://addons/kenney_road_pack/roadTile_199.obj" id="199_8d83w"]
+[ext_resource type="ArrayMesh" uid="uid://b7gga2wgkqxso" path="res://addons/kenney_road_pack/roadTile_200.obj" id="200_t1bpj"]
+[ext_resource type="ArrayMesh" uid="uid://bngvs7y581j6c" path="res://addons/kenney_road_pack/roadTile_201.obj" id="201_0xeix"]
+[ext_resource type="ArrayMesh" uid="uid://csdu6e4cbmw3k" path="res://addons/kenney_road_pack/roadTile_202.obj" id="202_bvgsw"]
+[ext_resource type="ArrayMesh" uid="uid://coymtwthj2i1o" path="res://addons/kenney_road_pack/roadTile_203.obj" id="203_pjxig"]
+[ext_resource type="ArrayMesh" uid="uid://8etjcjar1ava" path="res://addons/kenney_road_pack/roadTile_204.obj" id="204_jcuox"]
+[ext_resource type="ArrayMesh" uid="uid://3efp4igg1vs7" path="res://addons/kenney_road_pack/roadTile_205.obj" id="205_qvkmv"]
+[ext_resource type="ArrayMesh" uid="uid://ce2llo2i04ut4" path="res://addons/kenney_road_pack/roadTile_206.obj" id="206_5hcqh"]
+[ext_resource type="ArrayMesh" uid="uid://y283qj2kpxqn" path="res://addons/kenney_road_pack/roadTile_207.obj" id="207_mhjfp"]
+[ext_resource type="ArrayMesh" uid="uid://fkgu5ol3y1ny" path="res://addons/kenney_road_pack/roadTile_208.obj" id="208_07biw"]
+[ext_resource type="ArrayMesh" uid="uid://o6v212km52dc" path="res://addons/kenney_road_pack/roadTile_209.obj" id="209_gxkro"]
+[ext_resource type="ArrayMesh" uid="uid://dv7iyterk6073" path="res://addons/kenney_road_pack/roadTile_210.obj" id="210_ny1va"]
+[ext_resource type="ArrayMesh" uid="uid://godxb5irk0e7" path="res://addons/kenney_road_pack/roadTile_211.obj" id="211_324ok"]
+[ext_resource type="ArrayMesh" uid="uid://ddfyxnojl5gvi" path="res://addons/kenney_road_pack/roadTile_212.obj" id="212_xkmqn"]
+[ext_resource type="ArrayMesh" uid="uid://y8h2v87x6a2n" path="res://addons/kenney_road_pack/roadTile_213.obj" id="213_cvca1"]
+[ext_resource type="ArrayMesh" uid="uid://dixvwap8sv7w7" path="res://addons/kenney_road_pack/roadTile_214.obj" id="214_pyfvj"]
+[ext_resource type="ArrayMesh" uid="uid://c8ts72k05q57t" path="res://addons/kenney_road_pack/roadTile_215.obj" id="215_a766w"]
+[ext_resource type="ArrayMesh" uid="uid://bimyyn2wcugqd" path="res://addons/kenney_road_pack/roadTile_216.obj" id="216_mx8qb"]
+[ext_resource type="ArrayMesh" uid="uid://ckha8h4t0r3qw" path="res://addons/kenney_road_pack/roadTile_217.obj" id="217_x8d7x"]
+[ext_resource type="ArrayMesh" uid="uid://c0ncnk2umu0i8" path="res://addons/kenney_road_pack/roadTile_218.obj" id="218_ia3cf"]
+[ext_resource type="ArrayMesh" uid="uid://cmphgl37jlna1" path="res://addons/kenney_road_pack/roadTile_219.obj" id="219_gm8gt"]
+[ext_resource type="ArrayMesh" uid="uid://wa4d0f8tdubd" path="res://addons/kenney_road_pack/roadTile_220.obj" id="220_tyk5h"]
+[ext_resource type="ArrayMesh" uid="uid://vgokeevr6w2p" path="res://addons/kenney_road_pack/roadTile_221.obj" id="221_kc7h2"]
+[ext_resource type="ArrayMesh" uid="uid://dssu2v12jlesg" path="res://addons/kenney_road_pack/roadTile_222.obj" id="222_o1c4y"]
+[ext_resource type="ArrayMesh" uid="uid://dc1ti6u803yys" path="res://addons/kenney_road_pack/roadTile_223.obj" id="223_n108r"]
+[ext_resource type="ArrayMesh" uid="uid://cexts6sydysyv" path="res://addons/kenney_road_pack/roadTile_224.obj" id="224_r3ym8"]
+[ext_resource type="ArrayMesh" uid="uid://pfldy03golpk" path="res://addons/kenney_road_pack/roadTile_225.obj" id="225_vqv4y"]
+[ext_resource type="ArrayMesh" uid="uid://ypj3mqiu33vo" path="res://addons/kenney_road_pack/roadTile_226.obj" id="226_4xcap"]
+[ext_resource type="ArrayMesh" uid="uid://cnjvnjx0u6ly4" path="res://addons/kenney_road_pack/roadTile_227.obj" id="227_yqgq5"]
+[ext_resource type="ArrayMesh" uid="uid://bo75jarlh3ax6" path="res://addons/kenney_road_pack/roadTile_228.obj" id="228_x1yw0"]
+[ext_resource type="ArrayMesh" uid="uid://baf2fsfwrr5or" path="res://addons/kenney_road_pack/roadTile_229.obj" id="229_6ltah"]
+[ext_resource type="ArrayMesh" uid="uid://bs23pyi25grfp" path="res://addons/kenney_road_pack/roadTile_230.obj" id="230_lxk7d"]
+[ext_resource type="ArrayMesh" uid="uid://dxl56l5xrma06" path="res://addons/kenney_road_pack/roadTile_231.obj" id="231_eyjml"]
+[ext_resource type="ArrayMesh" uid="uid://cbqxad5i2gbon" path="res://addons/kenney_road_pack/roadTile_232.obj" id="232_qmcgb"]
+[ext_resource type="ArrayMesh" uid="uid://82vigvder3ln" path="res://addons/kenney_road_pack/roadTile_233.obj" id="233_uka8k"]
+[ext_resource type="ArrayMesh" uid="uid://1wwenlwdguj8" path="res://addons/kenney_road_pack/roadTile_234.obj" id="234_ctqjx"]
+[ext_resource type="ArrayMesh" uid="uid://dmadacbu0i60p" path="res://addons/kenney_road_pack/roadTile_235.obj" id="235_vvuw8"]
+[ext_resource type="ArrayMesh" uid="uid://o86enwuu0j00" path="res://addons/kenney_road_pack/roadTile_236.obj" id="236_a4e5v"]
+[ext_resource type="ArrayMesh" uid="uid://gqrrvj7hssc1" path="res://addons/kenney_road_pack/roadTile_237.obj" id="237_xa0o8"]
+[ext_resource type="ArrayMesh" uid="uid://bi7ow7ysxchqs" path="res://addons/kenney_road_pack/roadTile_238.obj" id="238_yle68"]
+[ext_resource type="ArrayMesh" uid="uid://yv247p4luuo" path="res://addons/kenney_road_pack/roadTile_239.obj" id="239_favta"]
+[ext_resource type="ArrayMesh" uid="uid://b8kp8n03k1urb" path="res://addons/kenney_road_pack/roadTile_240.obj" id="240_l653m"]
+[ext_resource type="ArrayMesh" uid="uid://bjnetfvd161eu" path="res://addons/kenney_road_pack/roadTile_241.obj" id="241_tpakr"]
+[ext_resource type="ArrayMesh" uid="uid://qgubnev71pnd" path="res://addons/kenney_road_pack/roadTile_242.obj" id="242_4j11o"]
+[ext_resource type="ArrayMesh" uid="uid://b31tobdxck0kp" path="res://addons/kenney_road_pack/roadTile_243.obj" id="243_doodd"]
+[ext_resource type="ArrayMesh" uid="uid://6gxquy887va2" path="res://addons/kenney_road_pack/roadTile_244.obj" id="244_jqpxd"]
+[ext_resource type="ArrayMesh" uid="uid://sxhqm484ju10" path="res://addons/kenney_road_pack/roadTile_245.obj" id="245_ywyye"]
+[ext_resource type="ArrayMesh" uid="uid://dd6x13lvqli1q" path="res://addons/kenney_road_pack/roadTile_246.obj" id="246_0lyeh"]
+[ext_resource type="ArrayMesh" uid="uid://bg5obt7u0dnvw" path="res://addons/kenney_road_pack/roadTile_247.obj" id="247_3oiw2"]
+[ext_resource type="ArrayMesh" uid="uid://ceyw7ftfe0wkt" path="res://addons/kenney_road_pack/roadTile_248.obj" id="248_n5c1l"]
+[ext_resource type="ArrayMesh" uid="uid://86lacrqdsvfs" path="res://addons/kenney_road_pack/roadTile_249.obj" id="249_jelh1"]
+[ext_resource type="ArrayMesh" uid="uid://b8iwwu2qwwyye" path="res://addons/kenney_road_pack/roadTile_250.obj" id="250_8t1rs"]
+[ext_resource type="ArrayMesh" uid="uid://b2pyprjks50cx" path="res://addons/kenney_road_pack/roadTile_251.obj" id="251_3ywwi"]
+[ext_resource type="ArrayMesh" uid="uid://1x78nbb0di8i" path="res://addons/kenney_road_pack/roadTile_252.obj" id="252_kne41"]
+[ext_resource type="ArrayMesh" uid="uid://c2doygb2nr3un" path="res://addons/kenney_road_pack/roadTile_253.obj" id="253_jhkbt"]
+[ext_resource type="ArrayMesh" uid="uid://d3h4aptu0ynb6" path="res://addons/kenney_road_pack/roadTile_254.obj" id="254_yl3os"]
+[ext_resource type="ArrayMesh" uid="uid://cr5g454qm8bgo" path="res://addons/kenney_road_pack/roadTile_255.obj" id="255_pjsdg"]
+[ext_resource type="ArrayMesh" uid="uid://48o86ykqiw6j" path="res://addons/kenney_road_pack/roadTile_256.obj" id="256_hnpk3"]
+[ext_resource type="ArrayMesh" uid="uid://dsee5xwjdxaua" path="res://addons/kenney_road_pack/roadTile_257.obj" id="257_oqu1f"]
+[ext_resource type="ArrayMesh" uid="uid://bxoqoojl64lek" path="res://addons/kenney_road_pack/roadTile_258.obj" id="258_lmk7l"]
+[ext_resource type="ArrayMesh" uid="uid://ltmr7nmwdqmd" path="res://addons/kenney_road_pack/roadTile_259.obj" id="259_yctby"]
+[ext_resource type="ArrayMesh" uid="uid://dgy2f0u37mbtx" path="res://addons/kenney_road_pack/roadTile_260.obj" id="260_f5o0b"]
+[ext_resource type="ArrayMesh" uid="uid://co2iv86dtiuhf" path="res://addons/kenney_road_pack/roadTile_261.obj" id="261_s60dq"]
+[ext_resource type="ArrayMesh" uid="uid://byo3i60vb3q3w" path="res://addons/kenney_road_pack/roadTile_262.obj" id="262_qenm5"]
+[ext_resource type="ArrayMesh" uid="uid://23u57u1hqaky" path="res://addons/kenney_road_pack/roadTile_263.obj" id="263_2m1mg"]
+[ext_resource type="ArrayMesh" uid="uid://b10sf6hnjw3s3" path="res://addons/kenney_road_pack/roadTile_264.obj" id="264_1r5ei"]
+[ext_resource type="ArrayMesh" uid="uid://h1eaxv7tbtnl" path="res://addons/kenney_road_pack/roadTile_265.obj" id="265_xvre3"]
+[ext_resource type="ArrayMesh" uid="uid://uvvxf7dfjmak" path="res://addons/kenney_road_pack/roadTile_266.obj" id="266_tgsv5"]
+[ext_resource type="ArrayMesh" uid="uid://cpj8gsqu3ife8" path="res://addons/kenney_road_pack/roadTile_267.obj" id="267_lule4"]
+[ext_resource type="ArrayMesh" uid="uid://b53uvny2u362u" path="res://addons/kenney_road_pack/roadTile_268.obj" id="268_83kky"]
+[ext_resource type="ArrayMesh" uid="uid://cqgf83sq75bfd" path="res://addons/kenney_road_pack/roadTile_269.obj" id="269_12mq4"]
+[ext_resource type="ArrayMesh" uid="uid://c0fay5dlih8c7" path="res://addons/kenney_road_pack/roadTile_270.obj" id="270_5rkfw"]
+[ext_resource type="ArrayMesh" uid="uid://d0p0ca2jqfuc7" path="res://addons/kenney_road_pack/roadTile_271.obj" id="271_i7ci8"]
+[ext_resource type="ArrayMesh" uid="uid://cx7eka5kxrky8" path="res://addons/kenney_road_pack/roadTile_272.obj" id="272_1kd81"]
+[ext_resource type="ArrayMesh" uid="uid://bi4xpw3ftlu72" path="res://addons/kenney_road_pack/roadTile_273.obj" id="273_quov1"]
+[ext_resource type="ArrayMesh" uid="uid://dbpkwqttbtewu" path="res://addons/kenney_road_pack/roadTile_274.obj" id="274_kd5s2"]
+[ext_resource type="ArrayMesh" uid="uid://cik8k7gsv6awe" path="res://addons/kenney_road_pack/roadTile_275.obj" id="275_xn8jm"]
+[ext_resource type="ArrayMesh" uid="uid://bpdteaav08qvp" path="res://addons/kenney_road_pack/roadTile_276.obj" id="276_jy32f"]
+[ext_resource type="ArrayMesh" uid="uid://0sftuwty1dmk" path="res://addons/kenney_road_pack/roadTile_277.obj" id="277_b0wia"]
+[ext_resource type="ArrayMesh" uid="uid://dwwbs68pb61em" path="res://addons/kenney_road_pack/roadTile_278.obj" id="278_1mtw8"]
+[ext_resource type="ArrayMesh" uid="uid://c1b735tj23euw" path="res://addons/kenney_road_pack/roadTile_279.obj" id="279_a8n8o"]
+[ext_resource type="ArrayMesh" uid="uid://bskikk1fl1nxs" path="res://addons/kenney_road_pack/roadTile_280.obj" id="280_vsdke"]
+[ext_resource type="ArrayMesh" uid="uid://dm73sixy3p7l7" path="res://addons/kenney_road_pack/roadTile_281.obj" id="281_jvnga"]
+[ext_resource type="ArrayMesh" uid="uid://x4v7ucbbl5y7" path="res://addons/kenney_road_pack/roadTile_282.obj" id="282_85p10"]
+[ext_resource type="ArrayMesh" uid="uid://7eh6uqiffxib" path="res://addons/kenney_road_pack/roadTile_283.obj" id="283_8dtdj"]
+[ext_resource type="ArrayMesh" uid="uid://b1wylrs4n5n4r" path="res://addons/kenney_road_pack/roadTile_284.obj" id="284_7ssyw"]
+[ext_resource type="ArrayMesh" uid="uid://cxhdhoino8v3y" path="res://addons/kenney_road_pack/roadTile_285.obj" id="285_jjo3w"]
+[ext_resource type="ArrayMesh" uid="uid://w6fuf7k7ooux" path="res://addons/kenney_road_pack/roadTile_286.obj" id="286_ct5rr"]
+[ext_resource type="ArrayMesh" uid="uid://5f760yuuvq60" path="res://addons/kenney_road_pack/roadTile_287.obj" id="287_d1woh"]
+[ext_resource type="ArrayMesh" uid="uid://b1y8bljou5x8r" path="res://addons/kenney_road_pack/roadTile_288.obj" id="288_k6run"]
+[ext_resource type="ArrayMesh" uid="uid://btth28xjplaef" path="res://addons/kenney_road_pack/roadTile_289.obj" id="289_w1n2w"]
+[ext_resource type="ArrayMesh" uid="uid://demfxym1gqs21" path="res://addons/kenney_road_pack/roadTile_290.obj" id="290_apwva"]
+[ext_resource type="ArrayMesh" uid="uid://bp1wjfwhs6rss" path="res://addons/kenney_road_pack/roadTile_291.obj" id="291_fbvtn"]
+[ext_resource type="ArrayMesh" uid="uid://cxo0jddq0opc7" path="res://addons/kenney_road_pack/roadTile_292.obj" id="292_6p1ib"]
+[ext_resource type="ArrayMesh" uid="uid://wxrcqq332v87" path="res://addons/kenney_road_pack/roadTile_293.obj" id="293_7uulo"]
+[ext_resource type="ArrayMesh" uid="uid://odutjfsgnx8d" path="res://addons/kenney_road_pack/roadTile_294.obj" id="294_2eje6"]
+[ext_resource type="ArrayMesh" uid="uid://c045iw2jnra3f" path="res://addons/kenney_road_pack/roadTile_295.obj" id="295_4n5ax"]
+[ext_resource type="ArrayMesh" uid="uid://bve0n2eqsjkhc" path="res://addons/kenney_road_pack/roadTile_296.obj" id="296_5rvww"]
+[ext_resource type="ArrayMesh" uid="uid://cgak4611wi3wi" path="res://addons/kenney_road_pack/roadTile_297.obj" id="297_5cj3x"]
+[ext_resource type="ArrayMesh" uid="uid://bjf60jknqnqby" path="res://addons/kenney_road_pack/roadTile_298.obj" id="298_4xd63"]
+[ext_resource type="ArrayMesh" uid="uid://dms8mvd6fa1ph" path="res://addons/kenney_road_pack/roadTile_299.obj" id="299_magp1"]
+[ext_resource type="ArrayMesh" uid="uid://bqvdv2i7mi8v7" path="res://addons/kenney_road_pack/roadTile_300.obj" id="300_qfa1e"]
+[ext_resource type="ArrayMesh" uid="uid://bkjx60cdmly1t" path="res://addons/kenney_road_pack/roadTile_301.obj" id="301_f1g3d"]
+[ext_resource type="ArrayMesh" uid="uid://88hrs3qprts3" path="res://addons/kenney_road_pack/roadTile_302.obj" id="302_7tmvt"]
+
+[node name="Tiles" type="Node3D"]
+
+[node name="RoadTile001" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_huje0")
+
+[node name="RoadTile002" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_t0psy")
+
+[node name="RoadTile003" type="MeshInstance3D" parent="."]
+mesh = ExtResource("3_yuo0e")
+
+[node name="RoadTile004" type="MeshInstance3D" parent="."]
+mesh = ExtResource("4_50q86")
+
+[node name="RoadTile005" type="MeshInstance3D" parent="."]
+mesh = ExtResource("5_i1t7s")
+
+[node name="RoadTile006" type="MeshInstance3D" parent="."]
+mesh = ExtResource("6_e4dwa")
+
+[node name="RoadTile007" type="MeshInstance3D" parent="."]
+mesh = ExtResource("7_mbdhq")
+
+[node name="RoadTile008" type="MeshInstance3D" parent="."]
+mesh = ExtResource("8_nrdo7")
+
+[node name="RoadTile009" type="MeshInstance3D" parent="."]
+mesh = ExtResource("9_ldn4f")
+
+[node name="RoadTile010" type="MeshInstance3D" parent="."]
+mesh = ExtResource("10_5yvg8")
+
+[node name="RoadTile011" type="MeshInstance3D" parent="."]
+mesh = ExtResource("11_lmt2p")
+
+[node name="RoadTile012" type="MeshInstance3D" parent="."]
+mesh = ExtResource("12_4jm68")
+
+[node name="RoadTile013" type="MeshInstance3D" parent="."]
+mesh = ExtResource("13_cvxde")
+
+[node name="RoadTile014" type="MeshInstance3D" parent="."]
+mesh = ExtResource("14_oe41n")
+
+[node name="RoadTile015" type="MeshInstance3D" parent="."]
+mesh = ExtResource("15_e82im")
+
+[node name="RoadTile016" type="MeshInstance3D" parent="."]
+mesh = ExtResource("16_1yxb0")
+
+[node name="RoadTile017" type="MeshInstance3D" parent="."]
+mesh = ExtResource("17_kejir")
+
+[node name="RoadTile018" type="MeshInstance3D" parent="."]
+mesh = ExtResource("18_qstch")
+
+[node name="RoadTile019" type="MeshInstance3D" parent="."]
+mesh = ExtResource("19_dtlp6")
+
+[node name="RoadTile020" type="MeshInstance3D" parent="."]
+mesh = ExtResource("20_b04gs")
+
+[node name="RoadTile021" type="MeshInstance3D" parent="."]
+mesh = ExtResource("21_ng1q6")
+
+[node name="RoadTile022" type="MeshInstance3D" parent="."]
+mesh = ExtResource("22_5kacu")
+
+[node name="RoadTile023" type="MeshInstance3D" parent="."]
+mesh = ExtResource("23_0xcy0")
+
+[node name="RoadTile024" type="MeshInstance3D" parent="."]
+mesh = ExtResource("24_lpocq")
+
+[node name="RoadTile025" type="MeshInstance3D" parent="."]
+mesh = ExtResource("25_c8mmj")
+
+[node name="RoadTile026" type="MeshInstance3D" parent="."]
+mesh = ExtResource("26_4fls7")
+
+[node name="RoadTile027" type="MeshInstance3D" parent="."]
+mesh = ExtResource("27_s2yuv")
+
+[node name="RoadTile028" type="MeshInstance3D" parent="."]
+mesh = ExtResource("28_7p053")
+
+[node name="RoadTile029" type="MeshInstance3D" parent="."]
+mesh = ExtResource("29_daruw")
+
+[node name="RoadTile030" type="MeshInstance3D" parent="."]
+mesh = ExtResource("30_cvi0j")
+
+[node name="RoadTile031" type="MeshInstance3D" parent="."]
+mesh = ExtResource("31_wyqmn")
+
+[node name="RoadTile032" type="MeshInstance3D" parent="."]
+mesh = ExtResource("32_b4hw4")
+
+[node name="RoadTile033" type="MeshInstance3D" parent="."]
+mesh = ExtResource("33_tc5o5")
+
+[node name="RoadTile034" type="MeshInstance3D" parent="."]
+mesh = ExtResource("34_djhfl")
+
+[node name="RoadTile035" type="MeshInstance3D" parent="."]
+mesh = ExtResource("35_hulsm")
+
+[node name="RoadTile036" type="MeshInstance3D" parent="."]
+mesh = ExtResource("36_f62uf")
+
+[node name="RoadTile037" type="MeshInstance3D" parent="."]
+mesh = ExtResource("37_1g2x3")
+
+[node name="RoadTile038" type="MeshInstance3D" parent="."]
+mesh = ExtResource("38_d41ew")
+
+[node name="RoadTile039" type="MeshInstance3D" parent="."]
+mesh = ExtResource("39_sebh4")
+
+[node name="RoadTile040" type="MeshInstance3D" parent="."]
+mesh = ExtResource("40_r3umy")
+
+[node name="RoadTile041" type="MeshInstance3D" parent="."]
+mesh = ExtResource("41_vc83n")
+
+[node name="RoadTile042" type="MeshInstance3D" parent="."]
+mesh = ExtResource("42_a2g8v")
+
+[node name="RoadTile043" type="MeshInstance3D" parent="."]
+mesh = ExtResource("43_wjqd7")
+
+[node name="RoadTile044" type="MeshInstance3D" parent="."]
+mesh = ExtResource("44_p552f")
+
+[node name="RoadTile045" type="MeshInstance3D" parent="."]
+mesh = ExtResource("45_w8ip0")
+
+[node name="RoadTile046" type="MeshInstance3D" parent="."]
+mesh = ExtResource("46_2p7ic")
+
+[node name="RoadTile047" type="MeshInstance3D" parent="."]
+mesh = ExtResource("47_cemtt")
+
+[node name="RoadTile048" type="MeshInstance3D" parent="."]
+mesh = ExtResource("48_17m8e")
+
+[node name="RoadTile049" type="MeshInstance3D" parent="."]
+mesh = ExtResource("49_anmi0")
+
+[node name="RoadTile050" type="MeshInstance3D" parent="."]
+mesh = ExtResource("50_0gp2f")
+
+[node name="RoadTile051" type="MeshInstance3D" parent="."]
+mesh = ExtResource("51_mchjl")
+
+[node name="RoadTile052" type="MeshInstance3D" parent="."]
+mesh = ExtResource("52_t4h1r")
+
+[node name="RoadTile053" type="MeshInstance3D" parent="."]
+mesh = ExtResource("53_k0mjb")
+
+[node name="RoadTile054" type="MeshInstance3D" parent="."]
+mesh = ExtResource("54_e0866")
+
+[node name="RoadTile055" type="MeshInstance3D" parent="."]
+mesh = ExtResource("55_7l5fo")
+
+[node name="RoadTile056" type="MeshInstance3D" parent="."]
+mesh = ExtResource("56_77avm")
+
+[node name="RoadTile057" type="MeshInstance3D" parent="."]
+mesh = ExtResource("57_pnev3")
+
+[node name="RoadTile058" type="MeshInstance3D" parent="."]
+mesh = ExtResource("58_d4qp8")
+
+[node name="RoadTile059" type="MeshInstance3D" parent="."]
+mesh = ExtResource("59_634ma")
+
+[node name="RoadTile060" type="MeshInstance3D" parent="."]
+mesh = ExtResource("60_24hl5")
+
+[node name="RoadTile061" type="MeshInstance3D" parent="."]
+mesh = ExtResource("61_2fylm")
+
+[node name="RoadTile062" type="MeshInstance3D" parent="."]
+mesh = ExtResource("62_bl6uo")
+
+[node name="RoadTile063" type="MeshInstance3D" parent="."]
+mesh = ExtResource("63_dljoo")
+
+[node name="RoadTile064" type="MeshInstance3D" parent="."]
+mesh = ExtResource("64_lorw0")
+
+[node name="RoadTile065" type="MeshInstance3D" parent="."]
+mesh = ExtResource("65_i7txn")
+
+[node name="RoadTile066" type="MeshInstance3D" parent="."]
+mesh = ExtResource("66_fpb3r")
+
+[node name="RoadTile067" type="MeshInstance3D" parent="."]
+mesh = ExtResource("67_4i75e")
+
+[node name="RoadTile068" type="MeshInstance3D" parent="."]
+mesh = ExtResource("68_m6i5k")
+
+[node name="RoadTile069" type="MeshInstance3D" parent="."]
+mesh = ExtResource("69_k1dto")
+
+[node name="RoadTile070" type="MeshInstance3D" parent="."]
+mesh = ExtResource("70_tqgpi")
+
+[node name="RoadTile071" type="MeshInstance3D" parent="."]
+mesh = ExtResource("71_bg7b2")
+
+[node name="RoadTile072" type="MeshInstance3D" parent="."]
+mesh = ExtResource("72_naojx")
+
+[node name="RoadTile073" type="MeshInstance3D" parent="."]
+mesh = ExtResource("73_mb3l6")
+
+[node name="RoadTile074" type="MeshInstance3D" parent="."]
+mesh = ExtResource("74_p14ci")
+
+[node name="RoadTile075" type="MeshInstance3D" parent="."]
+mesh = ExtResource("75_u7pec")
+
+[node name="RoadTile076" type="MeshInstance3D" parent="."]
+mesh = ExtResource("76_5vl1e")
+
+[node name="RoadTile077" type="MeshInstance3D" parent="."]
+mesh = ExtResource("77_d7y8w")
+
+[node name="RoadTile078" type="MeshInstance3D" parent="."]
+mesh = ExtResource("78_imgof")
+
+[node name="RoadTile079" type="MeshInstance3D" parent="."]
+mesh = ExtResource("79_gookd")
+
+[node name="RoadTile080" type="MeshInstance3D" parent="."]
+mesh = ExtResource("80_5k50o")
+
+[node name="RoadTile081" type="MeshInstance3D" parent="."]
+mesh = ExtResource("81_0mt40")
+
+[node name="RoadTile082" type="MeshInstance3D" parent="."]
+mesh = ExtResource("82_62r1d")
+
+[node name="RoadTile083" type="MeshInstance3D" parent="."]
+mesh = ExtResource("83_lr4lf")
+
+[node name="RoadTile084" type="MeshInstance3D" parent="."]
+mesh = ExtResource("84_gt4mm")
+
+[node name="RoadTile085" type="MeshInstance3D" parent="."]
+mesh = ExtResource("85_ff5eq")
+
+[node name="RoadTile086" type="MeshInstance3D" parent="."]
+mesh = ExtResource("86_mkmcw")
+
+[node name="RoadTile087" type="MeshInstance3D" parent="."]
+mesh = ExtResource("87_j2mo8")
+
+[node name="RoadTile088" type="MeshInstance3D" parent="."]
+mesh = ExtResource("88_sf873")
+
+[node name="RoadTile089" type="MeshInstance3D" parent="."]
+mesh = ExtResource("89_fjsnk")
+
+[node name="RoadTile090" type="MeshInstance3D" parent="."]
+mesh = ExtResource("90_nrh50")
+
+[node name="RoadTile091" type="MeshInstance3D" parent="."]
+mesh = ExtResource("91_jrfdn")
+
+[node name="RoadTile092" type="MeshInstance3D" parent="."]
+mesh = ExtResource("92_6skbi")
+
+[node name="RoadTile093" type="MeshInstance3D" parent="."]
+mesh = ExtResource("93_8h20u")
+
+[node name="RoadTile094" type="MeshInstance3D" parent="."]
+mesh = ExtResource("94_yf8ub")
+
+[node name="RoadTile095" type="MeshInstance3D" parent="."]
+mesh = ExtResource("95_cmy7v")
+
+[node name="RoadTile096" type="MeshInstance3D" parent="."]
+mesh = ExtResource("96_v6662")
+
+[node name="RoadTile097" type="MeshInstance3D" parent="."]
+mesh = ExtResource("97_bsiuo")
+
+[node name="RoadTile098" type="MeshInstance3D" parent="."]
+mesh = ExtResource("98_uy4xj")
+
+[node name="RoadTile099" type="MeshInstance3D" parent="."]
+mesh = ExtResource("99_dw55o")
+
+[node name="RoadTile100" type="MeshInstance3D" parent="."]
+mesh = ExtResource("100_03yyx")
+
+[node name="RoadTile101" type="MeshInstance3D" parent="."]
+mesh = ExtResource("101_bgr5e")
+
+[node name="RoadTile102" type="MeshInstance3D" parent="."]
+mesh = ExtResource("102_nj7na")
+
+[node name="RoadTile103" type="MeshInstance3D" parent="."]
+mesh = ExtResource("103_lqmjk")
+
+[node name="RoadTile104" type="MeshInstance3D" parent="."]
+mesh = ExtResource("104_61x8x")
+
+[node name="RoadTile105" type="MeshInstance3D" parent="."]
+mesh = ExtResource("105_ptda2")
+
+[node name="RoadTile106" type="MeshInstance3D" parent="."]
+mesh = ExtResource("106_pljdb")
+
+[node name="RoadTile107" type="MeshInstance3D" parent="."]
+mesh = ExtResource("107_k3c2c")
+
+[node name="RoadTile108" type="MeshInstance3D" parent="."]
+mesh = ExtResource("108_p30pq")
+
+[node name="RoadTile109" type="MeshInstance3D" parent="."]
+mesh = ExtResource("109_c6bay")
+
+[node name="RoadTile110" type="MeshInstance3D" parent="."]
+mesh = ExtResource("110_1j5if")
+
+[node name="RoadTile111" type="MeshInstance3D" parent="."]
+mesh = ExtResource("111_demhc")
+
+[node name="RoadTile112" type="MeshInstance3D" parent="."]
+mesh = ExtResource("112_s40iq")
+
+[node name="RoadTile113" type="MeshInstance3D" parent="."]
+mesh = ExtResource("113_4qt1q")
+
+[node name="RoadTile114" type="MeshInstance3D" parent="."]
+mesh = ExtResource("114_vaoca")
+
+[node name="RoadTile115" type="MeshInstance3D" parent="."]
+mesh = ExtResource("115_a4gsh")
+
+[node name="RoadTile116" type="MeshInstance3D" parent="."]
+mesh = ExtResource("116_4ulqa")
+
+[node name="RoadTile117" type="MeshInstance3D" parent="."]
+mesh = ExtResource("117_wx5et")
+
+[node name="RoadTile118" type="MeshInstance3D" parent="."]
+mesh = ExtResource("118_ds6nb")
+
+[node name="RoadTile119" type="MeshInstance3D" parent="."]
+mesh = ExtResource("119_t51ao")
+
+[node name="RoadTile120" type="MeshInstance3D" parent="."]
+mesh = ExtResource("120_32lsv")
+
+[node name="RoadTile121" type="MeshInstance3D" parent="."]
+mesh = ExtResource("121_phv2f")
+
+[node name="RoadTile122" type="MeshInstance3D" parent="."]
+mesh = ExtResource("122_jqpce")
+
+[node name="RoadTile123" type="MeshInstance3D" parent="."]
+mesh = ExtResource("123_lkfkj")
+
+[node name="RoadTile124" type="MeshInstance3D" parent="."]
+mesh = ExtResource("124_6f3j5")
+
+[node name="RoadTile125" type="MeshInstance3D" parent="."]
+mesh = ExtResource("125_dwar1")
+
+[node name="RoadTile126" type="MeshInstance3D" parent="."]
+mesh = ExtResource("126_34nem")
+
+[node name="RoadTile127" type="MeshInstance3D" parent="."]
+mesh = ExtResource("127_qa5qa")
+
+[node name="RoadTile128" type="MeshInstance3D" parent="."]
+mesh = ExtResource("128_mcfp8")
+
+[node name="RoadTile129" type="MeshInstance3D" parent="."]
+mesh = ExtResource("129_ssve5")
+
+[node name="RoadTile130" type="MeshInstance3D" parent="."]
+mesh = ExtResource("130_usphd")
+
+[node name="RoadTile131" type="MeshInstance3D" parent="."]
+mesh = ExtResource("131_an3gw")
+
+[node name="RoadTile132" type="MeshInstance3D" parent="."]
+mesh = ExtResource("132_j3wgr")
+
+[node name="RoadTile133" type="MeshInstance3D" parent="."]
+mesh = ExtResource("133_02hsu")
+
+[node name="RoadTile134" type="MeshInstance3D" parent="."]
+mesh = ExtResource("134_60p8u")
+
+[node name="RoadTile135" type="MeshInstance3D" parent="."]
+mesh = ExtResource("135_5rqky")
+
+[node name="RoadTile136" type="MeshInstance3D" parent="."]
+mesh = ExtResource("136_57dmv")
+
+[node name="RoadTile137" type="MeshInstance3D" parent="."]
+mesh = ExtResource("137_abhpv")
+
+[node name="RoadTile138" type="MeshInstance3D" parent="."]
+mesh = ExtResource("138_kdrv3")
+
+[node name="RoadTile139" type="MeshInstance3D" parent="."]
+mesh = ExtResource("139_g2fp0")
+
+[node name="RoadTile140" type="MeshInstance3D" parent="."]
+mesh = ExtResource("140_yisd0")
+
+[node name="RoadTile141" type="MeshInstance3D" parent="."]
+mesh = ExtResource("141_65uqo")
+
+[node name="RoadTile142" type="MeshInstance3D" parent="."]
+mesh = ExtResource("142_l0qao")
+
+[node name="RoadTile143" type="MeshInstance3D" parent="."]
+mesh = ExtResource("143_6wfjp")
+
+[node name="RoadTile144" type="MeshInstance3D" parent="."]
+mesh = ExtResource("144_li75j")
+
+[node name="RoadTile145" type="MeshInstance3D" parent="."]
+mesh = ExtResource("145_b4miu")
+
+[node name="RoadTile146" type="MeshInstance3D" parent="."]
+mesh = ExtResource("146_hgute")
+
+[node name="RoadTile147" type="MeshInstance3D" parent="."]
+mesh = ExtResource("147_e1yx3")
+
+[node name="RoadTile148" type="MeshInstance3D" parent="."]
+mesh = ExtResource("148_7c36s")
+
+[node name="RoadTile149" type="MeshInstance3D" parent="."]
+mesh = ExtResource("149_ipg5t")
+
+[node name="RoadTile150" type="MeshInstance3D" parent="."]
+mesh = ExtResource("150_fbhh0")
+
+[node name="RoadTile151" type="MeshInstance3D" parent="."]
+mesh = ExtResource("151_w26et")
+
+[node name="RoadTile152" type="MeshInstance3D" parent="."]
+mesh = ExtResource("152_cj881")
+
+[node name="RoadTile153" type="MeshInstance3D" parent="."]
+mesh = ExtResource("153_cqjhb")
+
+[node name="RoadTile154" type="MeshInstance3D" parent="."]
+mesh = ExtResource("154_f72kb")
+
+[node name="RoadTile155" type="MeshInstance3D" parent="."]
+mesh = ExtResource("155_s5fw8")
+
+[node name="RoadTile156" type="MeshInstance3D" parent="."]
+mesh = ExtResource("156_7yl6q")
+
+[node name="RoadTile157" type="MeshInstance3D" parent="."]
+mesh = ExtResource("157_7bw7q")
+
+[node name="RoadTile158" type="MeshInstance3D" parent="."]
+mesh = ExtResource("158_fy1p3")
+
+[node name="RoadTile159" type="MeshInstance3D" parent="."]
+mesh = ExtResource("159_ktbxh")
+
+[node name="RoadTile160" type="MeshInstance3D" parent="."]
+mesh = ExtResource("160_mi8ox")
+
+[node name="RoadTile161" type="MeshInstance3D" parent="."]
+mesh = ExtResource("161_p26hy")
+
+[node name="RoadTile162" type="MeshInstance3D" parent="."]
+mesh = ExtResource("162_io0kx")
+
+[node name="RoadTile163" type="MeshInstance3D" parent="."]
+mesh = ExtResource("163_ji4g0")
+
+[node name="RoadTile164" type="MeshInstance3D" parent="."]
+mesh = ExtResource("164_djm5t")
+
+[node name="RoadTile165" type="MeshInstance3D" parent="."]
+mesh = ExtResource("165_0lemt")
+
+[node name="RoadTile166" type="MeshInstance3D" parent="."]
+mesh = ExtResource("166_g646a")
+
+[node name="RoadTile167" type="MeshInstance3D" parent="."]
+mesh = ExtResource("167_chru5")
+
+[node name="RoadTile168" type="MeshInstance3D" parent="."]
+mesh = ExtResource("168_y3yp0")
+
+[node name="RoadTile169" type="MeshInstance3D" parent="."]
+mesh = ExtResource("169_nessb")
+
+[node name="RoadTile170" type="MeshInstance3D" parent="."]
+mesh = ExtResource("170_wwkxa")
+
+[node name="RoadTile171" type="MeshInstance3D" parent="."]
+mesh = ExtResource("171_pni6f")
+
+[node name="RoadTile172" type="MeshInstance3D" parent="."]
+mesh = ExtResource("172_dea80")
+
+[node name="RoadTile173" type="MeshInstance3D" parent="."]
+mesh = ExtResource("173_1g2a4")
+
+[node name="RoadTile174" type="MeshInstance3D" parent="."]
+mesh = ExtResource("174_pidc7")
+
+[node name="RoadTile175" type="MeshInstance3D" parent="."]
+mesh = ExtResource("175_kfnld")
+
+[node name="RoadTile176" type="MeshInstance3D" parent="."]
+mesh = ExtResource("176_2uhxb")
+
+[node name="RoadTile177" type="MeshInstance3D" parent="."]
+mesh = ExtResource("177_sgdgp")
+
+[node name="RoadTile178" type="MeshInstance3D" parent="."]
+mesh = ExtResource("178_gg2w6")
+
+[node name="RoadTile179" type="MeshInstance3D" parent="."]
+mesh = ExtResource("179_1yl0l")
+
+[node name="RoadTile180" type="MeshInstance3D" parent="."]
+mesh = ExtResource("180_8vknw")
+
+[node name="RoadTile181" type="MeshInstance3D" parent="."]
+mesh = ExtResource("181_llsgo")
+
+[node name="RoadTile182" type="MeshInstance3D" parent="."]
+mesh = ExtResource("182_txx3m")
+
+[node name="RoadTile183" type="MeshInstance3D" parent="."]
+mesh = ExtResource("183_5pqvo")
+
+[node name="RoadTile184" type="MeshInstance3D" parent="."]
+mesh = ExtResource("184_eydvw")
+
+[node name="RoadTile185" type="MeshInstance3D" parent="."]
+mesh = ExtResource("185_37g1i")
+
+[node name="RoadTile186" type="MeshInstance3D" parent="."]
+mesh = ExtResource("186_g1uc3")
+
+[node name="RoadTile187" type="MeshInstance3D" parent="."]
+mesh = ExtResource("187_ytla7")
+
+[node name="RoadTile188" type="MeshInstance3D" parent="."]
+mesh = ExtResource("188_ht6kq")
+
+[node name="RoadTile189" type="MeshInstance3D" parent="."]
+mesh = ExtResource("189_r6rbh")
+
+[node name="RoadTile190" type="MeshInstance3D" parent="."]
+mesh = ExtResource("190_o0mhb")
+
+[node name="RoadTile191" type="MeshInstance3D" parent="."]
+mesh = ExtResource("191_h5c1h")
+
+[node name="RoadTile192" type="MeshInstance3D" parent="."]
+mesh = ExtResource("192_upgqg")
+
+[node name="RoadTile193" type="MeshInstance3D" parent="."]
+mesh = ExtResource("193_n1hn2")
+
+[node name="RoadTile194" type="MeshInstance3D" parent="."]
+mesh = ExtResource("194_csf08")
+
+[node name="RoadTile195" type="MeshInstance3D" parent="."]
+mesh = ExtResource("195_72kgo")
+
+[node name="RoadTile196" type="MeshInstance3D" parent="."]
+mesh = ExtResource("196_xnfbq")
+
+[node name="RoadTile197" type="MeshInstance3D" parent="."]
+mesh = ExtResource("197_15t1b")
+
+[node name="RoadTile198" type="MeshInstance3D" parent="."]
+mesh = ExtResource("198_nun8a")
+
+[node name="RoadTile199" type="MeshInstance3D" parent="."]
+mesh = ExtResource("199_8d83w")
+
+[node name="RoadTile200" type="MeshInstance3D" parent="."]
+mesh = ExtResource("200_t1bpj")
+
+[node name="RoadTile201" type="MeshInstance3D" parent="."]
+mesh = ExtResource("201_0xeix")
+
+[node name="RoadTile202" type="MeshInstance3D" parent="."]
+mesh = ExtResource("202_bvgsw")
+
+[node name="RoadTile203" type="MeshInstance3D" parent="."]
+mesh = ExtResource("203_pjxig")
+
+[node name="RoadTile204" type="MeshInstance3D" parent="."]
+mesh = ExtResource("204_jcuox")
+
+[node name="RoadTile205" type="MeshInstance3D" parent="."]
+mesh = ExtResource("205_qvkmv")
+
+[node name="RoadTile206" type="MeshInstance3D" parent="."]
+mesh = ExtResource("206_5hcqh")
+
+[node name="RoadTile207" type="MeshInstance3D" parent="."]
+mesh = ExtResource("207_mhjfp")
+
+[node name="RoadTile208" type="MeshInstance3D" parent="."]
+mesh = ExtResource("208_07biw")
+
+[node name="RoadTile209" type="MeshInstance3D" parent="."]
+mesh = ExtResource("209_gxkro")
+
+[node name="RoadTile210" type="MeshInstance3D" parent="."]
+mesh = ExtResource("210_ny1va")
+
+[node name="RoadTile211" type="MeshInstance3D" parent="."]
+mesh = ExtResource("211_324ok")
+
+[node name="RoadTile212" type="MeshInstance3D" parent="."]
+mesh = ExtResource("212_xkmqn")
+
+[node name="RoadTile213" type="MeshInstance3D" parent="."]
+mesh = ExtResource("213_cvca1")
+
+[node name="RoadTile214" type="MeshInstance3D" parent="."]
+mesh = ExtResource("214_pyfvj")
+
+[node name="RoadTile215" type="MeshInstance3D" parent="."]
+mesh = ExtResource("215_a766w")
+
+[node name="RoadTile216" type="MeshInstance3D" parent="."]
+mesh = ExtResource("216_mx8qb")
+
+[node name="RoadTile217" type="MeshInstance3D" parent="."]
+mesh = ExtResource("217_x8d7x")
+
+[node name="RoadTile218" type="MeshInstance3D" parent="."]
+mesh = ExtResource("218_ia3cf")
+
+[node name="RoadTile219" type="MeshInstance3D" parent="."]
+mesh = ExtResource("219_gm8gt")
+
+[node name="RoadTile220" type="MeshInstance3D" parent="."]
+mesh = ExtResource("220_tyk5h")
+
+[node name="RoadTile221" type="MeshInstance3D" parent="."]
+mesh = ExtResource("221_kc7h2")
+
+[node name="RoadTile222" type="MeshInstance3D" parent="."]
+mesh = ExtResource("222_o1c4y")
+
+[node name="RoadTile223" type="MeshInstance3D" parent="."]
+mesh = ExtResource("223_n108r")
+
+[node name="RoadTile224" type="MeshInstance3D" parent="."]
+mesh = ExtResource("224_r3ym8")
+
+[node name="RoadTile225" type="MeshInstance3D" parent="."]
+mesh = ExtResource("225_vqv4y")
+
+[node name="RoadTile226" type="MeshInstance3D" parent="."]
+mesh = ExtResource("226_4xcap")
+
+[node name="RoadTile227" type="MeshInstance3D" parent="."]
+mesh = ExtResource("227_yqgq5")
+
+[node name="RoadTile228" type="MeshInstance3D" parent="."]
+mesh = ExtResource("228_x1yw0")
+
+[node name="RoadTile229" type="MeshInstance3D" parent="."]
+mesh = ExtResource("229_6ltah")
+
+[node name="RoadTile230" type="MeshInstance3D" parent="."]
+mesh = ExtResource("230_lxk7d")
+
+[node name="RoadTile231" type="MeshInstance3D" parent="."]
+mesh = ExtResource("231_eyjml")
+
+[node name="RoadTile232" type="MeshInstance3D" parent="."]
+mesh = ExtResource("232_qmcgb")
+
+[node name="RoadTile233" type="MeshInstance3D" parent="."]
+mesh = ExtResource("233_uka8k")
+
+[node name="RoadTile234" type="MeshInstance3D" parent="."]
+mesh = ExtResource("234_ctqjx")
+
+[node name="RoadTile235" type="MeshInstance3D" parent="."]
+mesh = ExtResource("235_vvuw8")
+
+[node name="RoadTile236" type="MeshInstance3D" parent="."]
+mesh = ExtResource("236_a4e5v")
+
+[node name="RoadTile237" type="MeshInstance3D" parent="."]
+mesh = ExtResource("237_xa0o8")
+
+[node name="RoadTile238" type="MeshInstance3D" parent="."]
+mesh = ExtResource("238_yle68")
+
+[node name="RoadTile239" type="MeshInstance3D" parent="."]
+mesh = ExtResource("239_favta")
+
+[node name="RoadTile240" type="MeshInstance3D" parent="."]
+mesh = ExtResource("240_l653m")
+
+[node name="RoadTile241" type="MeshInstance3D" parent="."]
+mesh = ExtResource("241_tpakr")
+
+[node name="RoadTile242" type="MeshInstance3D" parent="."]
+mesh = ExtResource("242_4j11o")
+
+[node name="RoadTile243" type="MeshInstance3D" parent="."]
+mesh = ExtResource("243_doodd")
+
+[node name="RoadTile244" type="MeshInstance3D" parent="."]
+mesh = ExtResource("244_jqpxd")
+
+[node name="RoadTile245" type="MeshInstance3D" parent="."]
+mesh = ExtResource("245_ywyye")
+
+[node name="RoadTile246" type="MeshInstance3D" parent="."]
+mesh = ExtResource("246_0lyeh")
+
+[node name="RoadTile247" type="MeshInstance3D" parent="."]
+mesh = ExtResource("247_3oiw2")
+
+[node name="RoadTile248" type="MeshInstance3D" parent="."]
+mesh = ExtResource("248_n5c1l")
+
+[node name="RoadTile249" type="MeshInstance3D" parent="."]
+mesh = ExtResource("249_jelh1")
+
+[node name="RoadTile250" type="MeshInstance3D" parent="."]
+mesh = ExtResource("250_8t1rs")
+
+[node name="RoadTile251" type="MeshInstance3D" parent="."]
+mesh = ExtResource("251_3ywwi")
+
+[node name="RoadTile252" type="MeshInstance3D" parent="."]
+mesh = ExtResource("252_kne41")
+
+[node name="RoadTile253" type="MeshInstance3D" parent="."]
+mesh = ExtResource("253_jhkbt")
+
+[node name="RoadTile254" type="MeshInstance3D" parent="."]
+mesh = ExtResource("254_yl3os")
+
+[node name="RoadTile255" type="MeshInstance3D" parent="."]
+mesh = ExtResource("255_pjsdg")
+
+[node name="RoadTile256" type="MeshInstance3D" parent="."]
+mesh = ExtResource("256_hnpk3")
+
+[node name="RoadTile257" type="MeshInstance3D" parent="."]
+mesh = ExtResource("257_oqu1f")
+
+[node name="RoadTile258" type="MeshInstance3D" parent="."]
+mesh = ExtResource("258_lmk7l")
+
+[node name="RoadTile259" type="MeshInstance3D" parent="."]
+mesh = ExtResource("259_yctby")
+
+[node name="RoadTile260" type="MeshInstance3D" parent="."]
+mesh = ExtResource("260_f5o0b")
+
+[node name="RoadTile261" type="MeshInstance3D" parent="."]
+mesh = ExtResource("261_s60dq")
+
+[node name="RoadTile262" type="MeshInstance3D" parent="."]
+mesh = ExtResource("262_qenm5")
+
+[node name="RoadTile263" type="MeshInstance3D" parent="."]
+mesh = ExtResource("263_2m1mg")
+
+[node name="RoadTile264" type="MeshInstance3D" parent="."]
+mesh = ExtResource("264_1r5ei")
+
+[node name="RoadTile265" type="MeshInstance3D" parent="."]
+mesh = ExtResource("265_xvre3")
+
+[node name="RoadTile266" type="MeshInstance3D" parent="."]
+mesh = ExtResource("266_tgsv5")
+
+[node name="RoadTile267" type="MeshInstance3D" parent="."]
+mesh = ExtResource("267_lule4")
+
+[node name="RoadTile268" type="MeshInstance3D" parent="."]
+mesh = ExtResource("268_83kky")
+
+[node name="RoadTile269" type="MeshInstance3D" parent="."]
+mesh = ExtResource("269_12mq4")
+
+[node name="RoadTile270" type="MeshInstance3D" parent="."]
+mesh = ExtResource("270_5rkfw")
+
+[node name="RoadTile271" type="MeshInstance3D" parent="."]
+mesh = ExtResource("271_i7ci8")
+
+[node name="RoadTile272" type="MeshInstance3D" parent="."]
+mesh = ExtResource("272_1kd81")
+
+[node name="RoadTile273" type="MeshInstance3D" parent="."]
+mesh = ExtResource("273_quov1")
+
+[node name="RoadTile274" type="MeshInstance3D" parent="."]
+mesh = ExtResource("274_kd5s2")
+
+[node name="RoadTile275" type="MeshInstance3D" parent="."]
+mesh = ExtResource("275_xn8jm")
+
+[node name="RoadTile276" type="MeshInstance3D" parent="."]
+mesh = ExtResource("276_jy32f")
+
+[node name="RoadTile277" type="MeshInstance3D" parent="."]
+mesh = ExtResource("277_b0wia")
+
+[node name="RoadTile278" type="MeshInstance3D" parent="."]
+mesh = ExtResource("278_1mtw8")
+
+[node name="RoadTile279" type="MeshInstance3D" parent="."]
+mesh = ExtResource("279_a8n8o")
+
+[node name="RoadTile280" type="MeshInstance3D" parent="."]
+mesh = ExtResource("280_vsdke")
+
+[node name="RoadTile281" type="MeshInstance3D" parent="."]
+mesh = ExtResource("281_jvnga")
+
+[node name="RoadTile282" type="MeshInstance3D" parent="."]
+mesh = ExtResource("282_85p10")
+
+[node name="RoadTile283" type="MeshInstance3D" parent="."]
+mesh = ExtResource("283_8dtdj")
+
+[node name="RoadTile284" type="MeshInstance3D" parent="."]
+mesh = ExtResource("284_7ssyw")
+
+[node name="RoadTile285" type="MeshInstance3D" parent="."]
+mesh = ExtResource("285_jjo3w")
+
+[node name="RoadTile286" type="MeshInstance3D" parent="."]
+mesh = ExtResource("286_ct5rr")
+
+[node name="RoadTile287" type="MeshInstance3D" parent="."]
+mesh = ExtResource("287_d1woh")
+
+[node name="RoadTile288" type="MeshInstance3D" parent="."]
+mesh = ExtResource("288_k6run")
+
+[node name="RoadTile289" type="MeshInstance3D" parent="."]
+mesh = ExtResource("289_w1n2w")
+
+[node name="RoadTile290" type="MeshInstance3D" parent="."]
+mesh = ExtResource("290_apwva")
+
+[node name="RoadTile291" type="MeshInstance3D" parent="."]
+mesh = ExtResource("291_fbvtn")
+
+[node name="RoadTile292" type="MeshInstance3D" parent="."]
+mesh = ExtResource("292_6p1ib")
+
+[node name="RoadTile293" type="MeshInstance3D" parent="."]
+mesh = ExtResource("293_7uulo")
+
+[node name="RoadTile294" type="MeshInstance3D" parent="."]
+mesh = ExtResource("294_2eje6")
+
+[node name="RoadTile295" type="MeshInstance3D" parent="."]
+mesh = ExtResource("295_4n5ax")
+
+[node name="RoadTile296" type="MeshInstance3D" parent="."]
+mesh = ExtResource("296_5rvww")
+
+[node name="RoadTile297" type="MeshInstance3D" parent="."]
+mesh = ExtResource("297_5cj3x")
+
+[node name="RoadTile298" type="MeshInstance3D" parent="."]
+mesh = ExtResource("298_4xd63")
+
+[node name="RoadTile299" type="MeshInstance3D" parent="."]
+mesh = ExtResource("299_magp1")
+
+[node name="RoadTile300" type="MeshInstance3D" parent="."]
+mesh = ExtResource("300_qfa1e")
+
+[node name="RoadTile301" type="MeshInstance3D" parent="."]
+mesh = ExtResource("301_f1g3d")
+
+[node name="RoadTile302" type="MeshInstance3D" parent="."]
+mesh = ExtResource("302_7tmvt")

@@ -22,6 +22,8 @@ class_name Player
 
 @onready var ball_timer: Timer = $Timer
 
+@onready var ball: Ball = %Ball
+
 ## [Debug] Texto que indica el estado actual del jugador 
 @onready var debug_state_label = $Path3D/PathFollow3D/Sprite3D/debug_state_label
 
@@ -35,9 +37,8 @@ class_name Player
 var ball_cooldown = 0.5
 
 ## Indica si el jugador esta en posesion del balon
-var ball_possesion = false
+#var ball_possesion = false
 ## Variable donde guardaremos el balon cuando el jugador tenga posesion
-var ball: Ball = null
 
 func _ready():
 	states.init(self)
@@ -54,7 +55,8 @@ func input(movementVector, shooting):
 ## Se llama cuando un area entra en contacto con 'player_area'
 func _on_player_area_3d_area_shape_entered(_area_rid, area, _area_shape_index, _local_shape_index):
 	# Comprobamos si el jugador ha tocado la pelota
-	if area.get_parent() is Ball && !ball_possesion :
+	var ball = area.get_parent()
+	if ball is Ball && ball.player == null:
 		attach_ball(area)
 
 ## Transferimos la posesion del balon al jugador
@@ -62,7 +64,7 @@ func attach_ball(area):
 	# Esto aun esta a medias:
 	if !ball_timer.is_stopped():
 		return
-	ball_possesion = true
+	ball.player = self
 	ball = area.get_parent()
 	ball.stop()
 	ball.collision_shape.set_deferred("disabled", true)
@@ -72,8 +74,7 @@ func attach_ball(area):
 ## Retiramos la posesion del balon al jugador
 func dettach_ball():
 	# Esto aun esta a medias:
-	ball_possesion = false
 	ball.collision_shape.set_deferred("disabled", false)
 	ball.reparent(get_tree().get_root())
-	ball = null
+	ball.player = null
 	ball_timer.start()

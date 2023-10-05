@@ -9,7 +9,8 @@ var current_state: BaseState
 @onready var states = {
 	BaseState.State.Idle: $Idle,
 	BaseState.State.Manual: $Manual,
-	BaseState.State.Shoot: $Shoot
+	BaseState.State.Shoot: $Shoot,
+	BaseState.State.Fetch: $Fetch,
 }
 
 ## Inicializamos todos los posibles estados

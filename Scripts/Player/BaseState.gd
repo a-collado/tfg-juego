@@ -11,7 +11,8 @@ enum State {
 	Null,
 	Manual,
 	Idle,
-	Shoot
+	Shoot,
+	Fetch
 }
 
 ## String que indica la animacion que se reproducira en este estado
@@ -20,11 +21,8 @@ enum State {
 ## Referencia al jugador
 var player: Player
 
-func _ready():
-	pass
-	
-func _process(_delta):
-	pass
+## Ultimo input que se relizo
+var last_movement
 
 ## Se llamara cada vez que se entre a este estado
 func enter():
@@ -41,8 +39,13 @@ func process(_delta: float) -> int:
 	return State.Null
 	
 func physics_process(_delta: float) -> int:
-	return State.Null	
+	return State.Null
 
 ## Enviar informacion sobre los inputs a este estado
-func input(_movementVector, shooting) -> int:
+func input(movementVector, shooting) -> int:
+	# Si se detecta movimiento, cambiamos a estado manual
+	# Comprobamos que el vector no este vacio y que sea diferente al ultimo input
+	if movementVector != PackedVector3Array([]) && movementVector != last_movement:
+		last_movement = movementVector
+		return State.Manual
 	return State.Null

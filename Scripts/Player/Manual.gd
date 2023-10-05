@@ -25,7 +25,7 @@ func create_curves(movementVector) -> int:
 		clean_path()
 		reset_line_renderer()
 		
-	# Añadimos todos los puntos de la linea a la Curve2d		
+	# Añadimos todos los puntos de la linea a la Curve3d		
 	for i in movementVector.size():
 		if i > curve3d.point_count:
 			# Usamos floor_y para que el jugador siempre este a nivel del suelo

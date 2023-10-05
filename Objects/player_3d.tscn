@@ -1,12 +1,13 @@
-[gd_scene load_steps=26 format=3 uid="uid://sq77ylvt0hw6"]
+[gd_scene load_steps=28 format=3 uid="uid://sq77ylvt0hw6"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_d0cpc"]
 [ext_resource type="Script" path="res://Scripts/Player/PlayerArea3D.gd" id="2_cvfsq"]
 [ext_resource type="Script" path="res://Scripts/Player/StateManager.gd" id="3_w601u"]
 [ext_resource type="Script" path="res://Scripts/Player/Manual.gd" id="4_8owuy"]
 [ext_resource type="Script" path="res://Scripts/Player/Idle.gd" id="5_8ofp7"]
-[ext_resource type="Script" path="res://Objects/Shoot.gd" id="6_wc1kf"]
+[ext_resource type="Script" path="res://Scripts/Player/Shoot.gd" id="6_wc1kf"]
 [ext_resource type="PackedScene" uid="uid://25pl1mvpb0ct" path="res://addons/LineRenderer/LineRenderer.tscn" id="7_tdch1"]
+[ext_resource type="Script" path="res://Scripts/Player/Fetch.gd" id="7_xoht1"]
 
 [sub_resource type="Curve3D" id="Curve3D_u6myo"]
 
@@ -907,6 +908,18 @@ tracks/97/path = NodePath("root/Skeleton3D:index_03.l")
 tracks/97/interp = 1
 tracks/97/loop_wrap = true
 tracks/97/keys = PackedFloat32Array(0, 1, 0.999999, 1, 0.999998)
+tracks/98/type = "value"
+tracks/98/imported = false
+tracks/98/enabled = true
+tracks/98/path = NodePath("root/Skeleton3D/body_001:mesh:surface_0/material:albedo_color")
+tracks/98/interp = 1
+tracks/98/loop_wrap = true
+tracks/98/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.205523, 0.522377, 0.745313, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_ucsdl"]
 resource_name = "air_jump_anticipation"
@@ -7120,8 +7133,24 @@ tracks/97/interp = 1
 tracks/97/loop_wrap = true
 tracks/97/keys = PackedFloat32Array(0, 1, 0.999999, 1, 0.999998)
 
+[sub_resource type="Animation" id="Animation_bkamo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("root/Skeleton3D/body_001:mesh:surface_0/material:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.205523, 0.522377, 0.745313, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t71b4"]
 _data = {
+"RESET": SubResource("Animation_bkamo"),
 "air_jump": SubResource("Animation_8rckm"),
 "air_jump_anticipation": SubResource("Animation_ucsdl"),
 "air_land": SubResource("Animation_461b5"),
@@ -7480,7 +7509,7 @@ libraries = {
 
 [node name="PlayerArea3D" type="Area3D" parent="Path3D/PathFollow3D/Sprite3D"]
 collision_layer = 2
-collision_mask = 2
+collision_mask = 4
 script = ExtResource("2_cvfsq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Path3D/PathFollow3D/Sprite3D/PlayerArea3D"]
@@ -7492,6 +7521,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 billboard = 1
 text = "Hola"
 font_size = 65
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Path3D/PathFollow3D"]
+path_desired_distance = 0.1
+target_desired_distance = 0.1
+debug_enabled = true
 
 [node name="State Manager" type="Node" parent="."]
 script = ExtResource("3_w601u")
@@ -7506,6 +7540,10 @@ animation = "idle"
 
 [node name="Shoot" type="Node" parent="State Manager"]
 script = ExtResource("6_wc1kf")
+
+[node name="Fetch" type="Node" parent="State Manager"]
+script = ExtResource("7_xoht1")
+animation = "run"
 
 [node name="LineRenderer" parent="." instance=ExtResource("7_tdch1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.705, 0)

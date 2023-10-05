@@ -15,6 +15,8 @@ const team_group = "Team"
 @onready var raycast_manager = $RaycastManager
 @onready var click_marker = $Marker
 
+@onready var ball: Ball = %Ball
+
 ## Coordenada 'y' a la que esta el suelo
 @export var floor_y = 0
 
@@ -63,9 +65,8 @@ func _physics_process(_delta):
 			# Detectamos si tenemos un jugador seleccionado, 
 			# si tiene posesion de balon, y si esta siendo clicado
 			if selected_player && !player_clicked:
-				for player in team_A.players:
-					if player.ball_possesion:
-						shoot_ball(raycast_position, player)
+				if ball.player != null:
+					shoot_ball(raycast_position, ball.player)
 				
 			player_clicked = false	
 
