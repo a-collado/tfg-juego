@@ -219,6 +219,21 @@ bind/44/name = &"index_03.l"
 bind/44/bone = -1
 bind/44/pose = Transform3D(-0.0424963, -0.0160099, 0.998968, 0.99889, 0.0196583, 0.042808, -0.0203235, 0.999679, 0.0151568, 0.0344626, -0.817136, -1.41592)
 
+[sub_resource type="Animation" id="Animation_bkamo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("root/Skeleton3D/body_001:mesh:surface_0/material:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.205523, 0.522377, 0.745313, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_8rckm"]
 resource_name = "air_jump"
 length = 0.266667
@@ -7132,21 +7147,6 @@ tracks/97/path = NodePath("root/Skeleton3D:index_03.l")
 tracks/97/interp = 1
 tracks/97/loop_wrap = true
 tracks/97/keys = PackedFloat32Array(0, 1, 0.999999, 1, 0.999998)
-
-[sub_resource type="Animation" id="Animation_bkamo"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("root/Skeleton3D/body_001:mesh:surface_0/material:albedo_color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.205523, 0.522377, 0.745313, 1)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t71b4"]
 _data = {

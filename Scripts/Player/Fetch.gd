@@ -1,8 +1,8 @@
 extends BaseState
-
-@onready var nav_agent = $"../../Path3D/PathFollow3D/NavigationAgent3D"
+## Hay que comentar esta clase
 
 var curve3d: Curve3D
+var last_ball_position
 
 func enter():
 	player.debug_state_label.text = name
@@ -10,6 +10,8 @@ func enter():
 	
 	# Reinicamos el proceso de la ultima curva
 	clean_path()
+	
+	curve3d.add_point(player.pathFollow.position)
 
 func exit():
 	clean_path()
@@ -18,22 +20,13 @@ func physics_process(_delta: float) -> int:
 	#print(player.ball.global_position)
 	if player.ball.player != null:
 		return BaseState.State.Idle
-		
-	nav_agent.set_target_position(player.ball.global_position)
 	
-	var next_point = nav_agent.get_next_path_position()
-	if next_point != Vector3.ZERO:
-		curve3d.add_point(player.to_local(Vector3(next_point.x, 
-		player.floor_y, next_point.z)))
-	
-	
-	
-	# Añadimos todos los puntos de la linea a la Curve3d		
-	#for i in nav_path.size():
-	#	if i > curve3d.point_count:
-	#		# Usamos floor_y para que el jugador siempre este a nivel del suelo
-	#		curve3d.add_point(player.to_local(Vector3(nav_path[i].x, 
-	#		player.floor_y, nav_path[i].z)))
+	var ball_position = player.to_local(Vector3(player.ball.position.x, 
+			player.floor_y, player.ball.position.z))	
+	if ball_position != last_ball_position:
+		curve3d.add_point(ball_position)	
+		last_ball_position = ball_position
+			
 	
 	# Hacemos que siga la linea
 	if player.pathFollow.progress_ratio < 1 :
@@ -46,5 +39,7 @@ func clean_path():
 	curve3d = Curve3D.new()
 	curve3d.bake_interval = 0.5 # No se si bajar esto podria hacer que se viera más fluido, habria que probar
 	player.path3D.curve = curve3d
-	player.pathFollow.progress_ratio = 0
+	curve3d.clear_points()
+	player.pathFollow.progress = 0
+	last_ball_position = null
 	

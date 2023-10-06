@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cfrabocvvkmko"]
+[gd_scene load_steps=16 format=3 uid="uid://cfrabocvvkmko"]
 
 [ext_resource type="PackedScene" uid="uid://sq77ylvt0hw6" path="res://Objects/player_3d.tscn" id="1_7ehee"]
 [ext_resource type="Script" path="res://Scripts/Camera.gd" id="1_cepeb"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" path="res://Scripts/InputManager.gd" id="3_l4bio"]
 [ext_resource type="Script" path="res://Scripts/RaycastManager.gd" id="4_c4to2"]
 [ext_resource type="Texture2D" uid="uid://bwqwgg2e4hdci" path="res://Assets/dot_black.png" id="5_q46iv"]
-[ext_resource type="PackedScene" uid="uid://c3lr3jdpy4lj6" path="res://Objects/enemy.tscn" id="5_xlidj"]
 [ext_resource type="Script" path="res://Scripts/Ball.gd" id="6_1vdqp"]
 [ext_resource type="MeshLibrary" uid="uid://d1hulycx5v61j" path="res://Assets/tiles.tres" id="9_kymak"]
 
@@ -80,44 +79,19 @@ script = ExtResource("2_adj88")
 shape = SubResource("CircleShape2D_vn4gy")
 
 [node name="Player 2" parent="Team A" instance=ExtResource("1_7ehee")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.61173, 0.051682, 22.2512)
-visible = false
-
-[node name="PlayerArea" type="Area2D" parent="Team A/Player 2"]
-script = ExtResource("2_adj88")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Team A/Player 2/PlayerArea"]
-shape = SubResource("CircleShape2D_vn4gy")
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.05954, 0.00405633, 20.7638)
 
 [node name="Player 3" parent="Team A" instance=ExtResource("1_7ehee")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.65655, 0, 22.2194)
-visible = false
-
-[node name="PlayerArea" type="Area2D" parent="Team A/Player 3"]
-script = ExtResource("2_adj88")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Team A/Player 3/PlayerArea"]
-shape = SubResource("CircleShape2D_vn4gy")
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.70017, 0.00405732, 21.168)
 
 [node name="Team B" type="Node" parent="."]
 script = ExtResource("2_e1w31")
 
-[node name="Enemy 1" parent="Team B" instance=ExtResource("5_xlidj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0438541, 0.00405583, -23.4937)
-visible = false
-
-[node name="Enemy 2" parent="Team B" instance=ExtResource("5_xlidj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64595, 0.00405732, -18.6963)
-visible = false
-
-[node name="Enemy 3" parent="Team B" instance=ExtResource("5_xlidj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.81863, 0.00405633, -18.7882)
-visible = false
-
-[node name="InputManager" type="Node" parent="." node_paths=PackedStringArray("team_A")]
+[node name="InputManager" type="Node" parent="." node_paths=PackedStringArray("team_A", "team_B")]
 editor_description = "Esta clase recibe todo el input del juego y lo envia a los jugadores"
 script = ExtResource("3_l4bio")
 team_A = NodePath("../Team A")
+team_B = NodePath("../Team B")
 
 [node name="RaycastManager" type="Node3D" parent="InputManager"]
 editor_description = "Este nodo se encarga de disparar todos los raycasts necesarios para calcular el movimiento de los personajes"

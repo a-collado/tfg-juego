@@ -1,14 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3lr3jdpy4lj6"]
+[gd_scene load_steps=2 format=3 uid="uid://c3lr3jdpy4lj6"]
 
 [ext_resource type="PackedScene" uid="uid://sq77ylvt0hw6" path="res://Objects/player_3d.tscn" id="1_5jswc"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmhlv"]
-resource_name = "Azul"
-cull_mode = 2
-vertex_color_use_as_albedo = true
-albedo_color = Color(0.917647, 0.0666667, 0.14902, 1)
-metallic = 0.109934
-roughness = 0.404527
 
 [node name="Player" instance=ExtResource("1_5jswc")]
 
@@ -90,6 +82,3 @@ bones/41/rotation = Quaternion(-0.0887825, 0.00471363, 0.00541089, 0.996025)
 bones/42/rotation = Quaternion(0.0419219, 0.0100341, -0.0953902, 0.994506)
 bones/43/rotation = Quaternion(-0.0662266, -0.00324284, 0.0131744, 0.997712)
 bones/44/rotation = Quaternion(-0.0859215, 0.000886248, -0.0176669, 0.996145)
-
-[node name="body_001" parent="Path3D/PathFollow3D/Sprite3D/root/Skeleton3D" index="0"]
-surface_material_override/0 = SubResource("StandardMaterial3D_lmhlv")

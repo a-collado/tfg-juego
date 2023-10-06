@@ -19,6 +19,8 @@ class_name Player
 @onready var player_area: Area3D = $Path3D/PathFollow3D/Sprite3D/PlayerArea3D
 ## Nodo que reproduce las animaciones del jugador
 @onready var animator: AnimationPlayer = $Path3D/PathFollow3D/Sprite3D/AnimationPlayer
+## Este quizas se quita despues. Por ahora lo dejo
+@onready var nav_agent: NavigationAgent3D = $Path3D/PathFollow3D/NavigationAgent3D
 
 @onready var ball_timer: Timer = $Timer
 
@@ -43,6 +45,7 @@ var ball_cooldown = 0.5
 func _ready():
 	states.init(self)
 	ball_timer.wait_time = ball_cooldown
+	pathFollow.rotation_mode = PathFollow3D.ROTATION_XY
 
 func _physics_process(delta):
 	states.physics_process(delta)
@@ -64,6 +67,7 @@ func attach_ball(area):
 	# Esto aun esta a medias:
 	if !ball_timer.is_stopped():
 		return
+
 	ball.player = self
 	ball = area.get_parent()
 	ball.stop()
@@ -74,6 +78,7 @@ func attach_ball(area):
 ## Retiramos la posesion del balon al jugador
 func dettach_ball():
 	# Esto aun esta a medias:
+
 	ball.collision_shape.set_deferred("disabled", false)
 	ball.reparent(get_tree().get_root())
 	ball.player = null

@@ -56,6 +56,8 @@ func clean_path():
 	player.path3D.curve = curve3d
 	player.pathFollow.progress_ratio = 0
 	
+	curve3d.add_point(player.pathFollow.position)
+	
 	# Por alguna razon esta es la unica manera de borrar la linea
 	player.line_renderer3D.points = PackedVector3Array([Vector3.ZERO, Vector3.ZERO])
 

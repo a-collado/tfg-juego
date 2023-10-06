@@ -1,6 +1,7 @@
 Bugs que arreglar:
 Puedes bugear al personaje creandole un camino detras
-Puedes hacer que el personaje se teletransporte
+Puedes hacer que el personaje se teletransporte (Esto ya deberia estar. Falta testeo)
+Si clicas cerca del jugador pero sin llegar a darle, haciendo que chute, lo bugas
 
 Ideas: 
 Podria basar el gameplay en tener que hacer pases y quizas tener que subir una 

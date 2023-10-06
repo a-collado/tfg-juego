@@ -5,10 +5,8 @@ extends Node
 ## pulsa sobre ellos y maneja todo el input a la hora de dibujar los caminos.
 ## Indica cuando moverse y cuando chutar a todos los jugadores del equipo.
 
-
-## Nombre del grupo al que pertenecen todos los jugadores
-const team_group = "Team"
 @export var team_A: Team
+@export var team_B: Team
 
 ## Vector3 donde guardaremos los puntos de la linea que seguira el jugador
 @onready var current_line3D = PackedVector3Array()
@@ -64,8 +62,9 @@ func _physics_process(_delta):
 				
 			# Detectamos si tenemos un jugador seleccionado, 
 			# si tiene posesion de balon, y si esta siendo clicado
-			if selected_player && !player_clicked:
-				if ball.player != null:
+			if !player_clicked:
+				var ball_player = ball.player
+				if ball_player != null && ball_player in team_A.players:
 					shoot_ball(raycast_position, ball.player)
 				
 			player_clicked = false	
