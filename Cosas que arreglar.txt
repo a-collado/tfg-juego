@@ -6,4 +6,7 @@ Si clicas cerca del jugador pero sin llegar a darle, haciendo que chute, lo buga
 Ideas: 
 Podria basar el gameplay en tener que hacer pases y quizas tener que subir una 
 barra de carga a base de pases o algo asi.
+Podria hacer lines predefinidas para el movimiento de cada jugador cuando sube
+a atacar o cuando baja a defender.
+
 Mirar tanto Pyre como Omega Strikers y otros juegos del estilo.

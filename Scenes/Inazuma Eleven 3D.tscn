@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cfrabocvvkmko"]
+[gd_scene load_steps=17 format=3 uid="uid://cfrabocvvkmko"]
 
 [ext_resource type="PackedScene" uid="uid://sq77ylvt0hw6" path="res://Objects/player_3d.tscn" id="1_7ehee"]
 [ext_resource type="Script" path="res://Scripts/Camera.gd" id="1_cepeb"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Team.gd" id="2_e1w31"]
 [ext_resource type="Script" path="res://Scripts/InputManager.gd" id="3_l4bio"]
 [ext_resource type="Script" path="res://Scripts/RaycastManager.gd" id="4_c4to2"]
+[ext_resource type="PackedScene" uid="uid://c3lr3jdpy4lj6" path="res://Objects/enemy.tscn" id="5_5nsy4"]
 [ext_resource type="Texture2D" uid="uid://bwqwgg2e4hdci" path="res://Assets/dot_black.png" id="5_q46iv"]
 [ext_resource type="Script" path="res://Scripts/Ball.gd" id="6_1vdqp"]
 [ext_resource type="MeshLibrary" uid="uid://d1hulycx5v61j" path="res://Assets/tiles.tres" id="9_kymak"]
@@ -57,11 +58,11 @@ size = Vector3(1.24515, 1, 6.04259)
 
 [node name="Camera" type="Camera3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.669947, 0.742409, 0, -0.742409, 0.669947, 0, 33, 37.33)
-doppler_tracking = 2
+transform = Transform3D(1, 0, 0, 0, 0.669947, 0.742409, 0, -0.742409, 0.669947, 0, 43.205, 37.83)
+projection = 1
 current = true
 fov = 40.0
-size = 12.0
+size = 32.36
 script = ExtResource("1_cepeb")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -86,6 +87,15 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.7001
 
 [node name="Team B" type="Node" parent="."]
 script = ExtResource("2_e1w31")
+
+[node name="Enemy 1" parent="Team B" instance=ExtResource("5_5nsy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.202737, 0.00405633, -20.2799)
+
+[node name="Enemy 2" parent="Team B" instance=ExtResource("5_5nsy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.34664, 0.00405434, -24.4049)
+
+[node name="Enemy 3" parent="Team B" instance=ExtResource("5_5nsy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.39043, 0.00405633, -24.7225)
 
 [node name="InputManager" type="Node" parent="." node_paths=PackedStringArray("team_A", "team_B")]
 editor_description = "Esta clase recibe todo el input del juego y lo envia a los jugadores"

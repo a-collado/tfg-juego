@@ -64,7 +64,9 @@ func _physics_process(_delta):
 			# si tiene posesion de balon, y si esta siendo clicado
 			if !player_clicked:
 				var ball_player = ball.player
-				if ball_player != null && ball_player in team_A.players:
+				# Esto esta desactivado para hacer debug
+				##if ball_player != null && ball_player in team_A.players:
+				if ball_player != null:
 					shoot_ball(raycast_position, ball.player)
 				
 			player_clicked = false	
