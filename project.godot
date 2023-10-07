@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Pruebas"
-run/main_scene="res://Scenes/Inazuma Eleven 3D.tscn"
+config/name="TFG"
+run/main_scene="res://Scenes/Game.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://Assets/icon.svg"
+config/icon="res://Assets/Iconos/icon.svg"
 
 [display]
 

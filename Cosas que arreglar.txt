@@ -1,5 +1,5 @@
 Bugs que arreglar:
-Puedes bugear al personaje creandole un camino detras
+Puedes bugear al personaje creandole un camino detras (Esto ya deberia estar. Falta testeo)
 Puedes hacer que el personaje se teletransporte (Esto ya deberia estar. Falta testeo)
 Si clicas cerca del jugador pero sin llegar a darle, haciendo que chute, lo bugas
 

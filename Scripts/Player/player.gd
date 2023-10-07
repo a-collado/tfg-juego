@@ -26,6 +26,8 @@ class_name Player
 
 @onready var ball: Ball = %Ball
 
+@onready var team: Team = self.get_parent()
+
 ## [Debug] Texto que indica el estado actual del jugador 
 @onready var debug_state_label = $Path3D/PathFollow3D/Sprite3D/debug_state_label
 
@@ -46,7 +48,7 @@ func _ready():
 	states.init(self)
 	ball_timer.wait_time = ball_cooldown
 	pathFollow.rotation_mode = PathFollow3D.ROTATION_XY
-
+	
 func _physics_process(delta):
 	states.physics_process(delta)
 
@@ -58,8 +60,8 @@ func input(movementVector, shooting):
 ## Se llama cuando un area entra en contacto con 'player_area'
 func _on_player_area_3d_area_shape_entered(_area_rid, area, _area_shape_index, _local_shape_index):
 	# Comprobamos si el jugador ha tocado la pelota
-	var ball = area.get_parent()
-	if ball is Ball && ball.player == null:
+	var detected_ball = area.get_parent()
+	if detected_ball is Ball && detected_ball.player == null:
 		attach_ball(area)
 
 ## Transferimos la posesion del balon al jugador
