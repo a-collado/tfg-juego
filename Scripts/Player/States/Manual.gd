@@ -50,9 +50,9 @@ func physics_process(_delta: float) -> int:
 	elif player.pathFollow.progress_ratio >= 1: 
 		return State.Idle
 	# Continuamos en este estado	
-	return State.Null	
+	return State.Null
 	
-## Reiniciamos el camino del jugador	
+## Reiniciamos el camino del jugador
 func clean_path():
 	curve3d.clear_points()
 	player.pathFollow.progress_ratio = 0

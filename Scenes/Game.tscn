@@ -3,25 +3,28 @@
 [ext_resource type="PackedScene" uid="uid://sq77ylvt0hw6" path="res://Objects/player.tscn" id="1_7ehee"]
 [ext_resource type="Script" path="res://Scripts/Camera.gd" id="1_cepeb"]
 [ext_resource type="Script" path="res://Scripts/Team.gd" id="2_e1w31"]
-[ext_resource type="Script" path="res://Scripts/Player/PlayerArea.gd" id="4_6j2ed"]
 [ext_resource type="PackedScene" uid="uid://c3lr3jdpy4lj6" path="res://Objects/enemy.tscn" id="5_5nsy4"]
 [ext_resource type="Script" path="res://Scripts/Ball.gd" id="6_1vdqp"]
 [ext_resource type="Script" path="res://Scripts/Input/InputManager.gd" id="6_ys5qb"]
 [ext_resource type="Script" path="res://Scripts/Input/RaycastManager.gd" id="7_j6ux5"]
 [ext_resource type="Texture2D" uid="uid://bwqwgg2e4hdci" path="res://Assets/Iconos/dot_black.png" id="8_1ie8l"]
 [ext_resource type="MeshLibrary" uid="uid://d1hulycx5v61j" path="res://Assets/tiles.tres" id="9_kymak"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="10_o3gjt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygqou"]
 albedo_color = Color(0.207843, 0.623529, 0.109804, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xs8xu"]
+albedo_color = Color(0.945281, 0.129458, 0.176349, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gbfhi"]
+size = Vector3(0.776048, 0.838601, 0.717716)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qi7w"]
 albedo_color = Color(0.0977035, 0.258915, 0.435264, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gbfhi"]
-size = Vector3(0.776048, 0.162806, 0.717716)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_vn4gy"]
-radius = 105.005
+[sub_resource type="SphereShape3D" id="SphereShape3D_0vqjl"]
+radius = 0.242688
 
 [sub_resource type="Animation" id="Animation_c7n5n"]
 resource_name = "Click"
@@ -44,9 +47,6 @@ _data = {
 "Click": SubResource("Animation_c7n5n")
 }
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_0vqjl"]
-radius = 0.242688
-
 [node name="Game" type="Node3D"]
 process_mode = 1
 
@@ -59,27 +59,46 @@ cell_center_x = false
 cell_center_y = false
 cell_center_z = false
 data = {
-"cells": PackedInt32Array(3, 8, 1441792, 3, 7, 1441792, 3, 6, 1441792, 3, 5, 1441792, 3, 4, 1441792, 3, 9, 1441792, 2, 9, 1441792, 1, 9, 1441792, 0, 9, 1441792, 65535, 9, 1441792, 65534, 9, 1441792, 65533, 9, 1441792, 65532, 9, 1441792, 65532, 8, 1441792, 65532, 7, 1441792, 65532, 6, 1441792, 65532, 5, 1441792, 65532, 4, 1441792, 65532, 3, 1441792, 65532, 2, 1441792, 65532, 1, 1441792, 65532, 0, 1441792, 65532, 65535, 1441792, 65532, 65534, 1441792, 65532, 65533, 1441792, 65532, 65532, 1441792, 65532, 65531, 1441792, 65532, 65530, 1441792, 65532, 65529, 1441792, 65532, 65528, 1441792, 65532, 65527, 1441792, 65532, 65526, 1441792, 65533, 65526, 1441792, 65535, 65526, 1441792, 0, 65526, 1441792, 65534, 65526, 1441792, 1, 65526, 1441792, 2, 65526, 1441792, 3, 65526, 1441792, 3, 65527, 1441792, 3, 65528, 1441792, 3, 65529, 1441792, 3, 65530, 1441792, 3, 3, 1441792, 3, 1, 1441792, 3, 0, 1441792, 3, 65535, 1441792, 3, 2, 1441792, 3, 65534, 1441792, 3, 65533, 1441792, 3, 65532, 1441792, 3, 65531, 1441792, 4, 65532, 58, 4, 65531, 58, 4, 65530, 58, 4, 65529, 58, 4, 65533, 58, 4, 65534, 58, 4, 65535, 58, 4, 0, 58, 4, 1, 58, 4, 2, 58, 4, 3, 58, 4, 4, 58, 4, 5, 58, 4, 6, 58, 4, 7, 58, 4, 8, 58, 6, 9, 655418, 6, 8, 655418, 6, 7, 655418, 6, 6, 655418, 6, 5, 655418, 6, 4, 655418, 6, 3, 655418, 6, 2, 655418, 6, 1, 655418, 6, 0, 655418, 6, 65535, 655418, 6, 65534, 655418, 6, 65533, 655418, 6, 65532, 655418, 6, 65531, 655418, 6, 65530, 655418, 6, 65529, 655418, 6, 65528, 655418, 6, 65527, 655418, 6, 65526, 655418, 4, 9, 58, 4, 10, 58, 4, 65527, 58, 4, 65528, 58, 6, 65525, 655418, 4, 65524, 1441850, 3, 65524, 1441850, 2, 65524, 1441850, 1, 65524, 1441850, 0, 65524, 1441850, 65535, 65524, 1441850, 65534, 65524, 1441850, 65533, 65524, 1441850, 65532, 65524, 1441850, 65531, 65524, 1441850, 65531, 65525, 58, 65531, 65526, 58, 65531, 65527, 58, 65531, 65528, 58, 65531, 65529, 58, 65531, 65530, 58, 65531, 65531, 58, 65531, 65532, 58, 65531, 65533, 58, 65531, 65534, 58, 65531, 65535, 58, 65531, 0, 58, 65531, 1, 58, 65531, 2, 58, 65531, 3, 58, 65531, 4, 58, 65531, 5, 58, 65531, 6, 58, 65531, 7, 58, 65531, 8, 58, 65531, 9, 58, 65531, 10, 58, 65531, 11, 58, 65532, 11, 1048634, 65533, 11, 1048634, 65534, 11, 1048634, 65535, 11, 1048634, 0, 11, 1048634, 1, 11, 1048634, 2, 11, 1048634, 3, 11, 1048634, 4, 11, 1048634, 6, 10, 655418, 5, 11, 1048634, 6, 11, 1048634, 6, 65524, 655418, 5, 65524, 1441850, 65533, 65525, 655417, 65534, 65525, 655417, 65535, 65525, 655417, 0, 65525, 655417, 1, 65525, 655417, 2, 65525, 655417, 3, 65525, 655417, 4, 65525, 655417, 5, 65525, 655417)
+"cells": PackedInt32Array(3, 8, 1441792, 3, 7, 1441792, 3, 6, 1441792, 3, 5, 1441792, 3, 4, 1441792, 3, 9, 1441792, 2, 9, 1441792, 1, 9, 1441792, 0, 9, 1441792, 65535, 9, 1441792, 65534, 9, 1441792, 65533, 9, 1441792, 65532, 9, 1441792, 65532, 8, 1441792, 65532, 7, 1441792, 65532, 6, 1441792, 65532, 5, 1441792, 65532, 4, 1441792, 65532, 2, 1441792, 65532, 1, 1441792, 65532, 0, 1441792, 65532, 65535, 1441792, 65532, 65534, 1441792, 65532, 65533, 1441792, 65532, 65532, 1441792, 65532, 65531, 1441792, 65532, 65530, 1441792, 65532, 65529, 1441792, 65532, 65528, 1441792, 65532, 65527, 1441792, 65532, 65526, 1441792, 65533, 65526, 1441792, 65535, 65526, 1441792, 0, 65526, 1441792, 65534, 65526, 1441792, 1, 65526, 1441792, 2, 65526, 1441792, 3, 65526, 1441792, 3, 65527, 1441792, 3, 65528, 1441792, 3, 65529, 1441792, 3, 65530, 1441792, 3, 3, 1441792, 3, 1, 1441792, 3, 0, 1441792, 3, 65535, 1441792, 3, 2, 1441792, 3, 65534, 1441792, 3, 65533, 1441792, 3, 65532, 1441792, 3, 65531, 1441792, 4, 65532, 58, 4, 65531, 58, 4, 65530, 58, 4, 65529, 58, 4, 65533, 58, 4, 65534, 58, 4, 65535, 58, 4, 0, 58, 4, 1, 58, 4, 2, 58, 4, 3, 58, 4, 4, 58, 4, 5, 58, 4, 6, 58, 4, 7, 58, 4, 8, 58, 6, 9, 655418, 6, 8, 655418, 6, 7, 655418, 6, 6, 655418, 6, 5, 655418, 6, 4, 655418, 6, 3, 655418, 6, 2, 655418, 6, 1, 655418, 6, 0, 655418, 6, 65535, 655418, 6, 65534, 655418, 6, 65533, 655418, 6, 65532, 655418, 6, 65531, 655418, 6, 65530, 655418, 6, 65529, 655418, 6, 65528, 655418, 6, 65527, 655418, 6, 65526, 655418, 4, 9, 58, 4, 10, 58, 4, 65527, 58, 4, 65528, 58, 6, 65525, 655418, 4, 65524, 1441850, 3, 65524, 1441850, 2, 65524, 1441850, 1, 65524, 1441850, 0, 65524, 1441850, 65535, 65524, 1441850, 65534, 65524, 1441850, 65533, 65524, 1441850, 65532, 65524, 1441850, 65531, 65524, 1441850, 65531, 65525, 58, 65531, 65526, 58, 65531, 65527, 58, 65531, 65528, 58, 65531, 65529, 58, 65531, 65530, 58, 65531, 65531, 58, 65531, 65532, 58, 65531, 65533, 58, 65531, 65534, 58, 65531, 65535, 58, 65531, 0, 58, 65531, 1, 58, 65531, 2, 58, 65531, 3, 58, 65531, 4, 58, 65531, 5, 58, 65531, 6, 58, 65531, 7, 58, 65531, 8, 58, 65531, 9, 58, 65531, 10, 58, 65531, 11, 58, 65532, 11, 1048634, 65533, 11, 1048634, 65534, 11, 1048634, 65535, 11, 1048634, 0, 11, 1048634, 1, 11, 1048634, 2, 11, 1048634, 3, 11, 1048634, 4, 11, 1048634, 6, 10, 655418, 5, 11, 1048634, 6, 11, 1048634, 6, 65524, 655418, 5, 65524, 1441850, 65533, 65525, 655417, 65534, 65525, 655417, 65535, 65525, 655417, 0, 65525, 655417, 1, 65525, 655417, 2, 65525, 655417, 3, 65525, 655417, 4, 65525, 655417, 5, 65525, 655417, 65532, 3, 1441792)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
+metadata/_edit_lock_ = true
 
 [node name="Floor" type="CSGBox3D" parent="Environment"]
 transform = Transform3D(14.4098, 0, 0, 0, 0.00811265, 0, 0, 0, 9.043, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_ygqou")
 use_collision = true
 size = Vector3(1.24515, 1, 6.04259)
+metadata/_edit_lock_ = true
 
 [node name="Goal A" type="CSGCylinder3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.096745, 20.6919)
+material_override = SubResource("StandardMaterial3D_xs8xu")
+radius = 1.5
+height = 0.3
+sides = 16
+
+[node name="Area3D" type="Area3D" parent="Environment/Goal A"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Goal A/Area3D"]
+transform = Transform3D(3.24487, 0, 0, 0, 3.24487, 0, 0, 0, 3.24487, 0, 0.748212, 0.0711651)
+shape = SubResource("BoxShape3D_gbfhi")
+
+[node name="Goal B" type="CSGCylinder3D" parent="Environment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.096745, -18.5674)
 material_override = SubResource("StandardMaterial3D_0qi7w")
 radius = 1.5
 height = 0.3
 sides = 16
 
-[node name="Area3D" type="Area3D" parent="Environment/Goal A"]
+[node name="Area3D" type="Area3D" parent="Environment/Goal B"]
+collision_layer = 4
+collision_mask = 4
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Goal A/Area3D"]
-transform = Transform3D(3.24487, 0, 0, 0, 3.24487, 0, 0, 0, 3.24487, 0, 0.318048, 0.0711651)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Goal B/Area3D"]
+transform = Transform3D(3.24487, 0, 0, 0, 3.24487, 0, 0, 0, 3.24487, 0, 1.27072, 0.0711651)
 shape = SubResource("BoxShape3D_gbfhi")
 
 [node name="Camera" type="Camera3D" parent="."]
@@ -93,17 +112,26 @@ script = ExtResource("1_cepeb")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
+[node name="Ball" type="CSGSphere3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14895, 5.1479)
+collision_layer = 2
+collision_mask = 2
+radius = 0.15
+script = ExtResource("6_1vdqp")
+
+[node name="Area3D" type="Area3D" parent="Ball" groups=["Ball"]]
+collision_layer = 4
+collision_mask = 6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ball/Area3D"]
+shape = SubResource("SphereShape3D_0vqjl")
+
 [node name="Team A" type="Node" parent="."]
 script = ExtResource("2_e1w31")
 
 [node name="Player 1" parent="Team A" instance=ExtResource("1_7ehee")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 17.18)
-
-[node name="PlayerArea" type="Area2D" parent="Team A/Player 1"]
-script = ExtResource("4_6j2ed")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Team A/Player 1/PlayerArea"]
-shape = SubResource("CircleShape2D_vn4gy")
 
 [node name="Player 2" parent="Team A" instance=ExtResource("1_7ehee")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.05954, 0.00405633, 20.7638)
@@ -144,17 +172,11 @@ libraries = {
 "": SubResource("AnimationLibrary_1j3ln")
 }
 
-[node name="Ball" type="CSGSphere3D" parent="."]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14895, 5.1479)
-collision_layer = 2
-collision_mask = 2
-radius = 0.15
-script = ExtResource("6_1vdqp")
+[node name="GameManager" type="Node" parent="." node_paths=PackedStringArray("team_A", "team_B")]
+editor_description = "Nodo que maneja cuando empieza y acaba el partido, y las puntuaciones de cada equipo"
+script = ExtResource("10_o3gjt")
+team_A = NodePath("../Team A")
+team_B = NodePath("../Team B")
 
-[node name="Area3D" type="Area3D" parent="Ball" groups=["Ball"]]
-collision_layer = 4
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ball/Area3D"]
-shape = SubResource("SphereShape3D_0vqjl")
+[connection signal="area_entered" from="Environment/Goal A/Area3D" to="GameManager" method="_on_goal_A_entered"]
+[connection signal="area_entered" from="Environment/Goal B/Area3D" to="GameManager" method="_on_goal_B_entered"]
