@@ -31,9 +31,6 @@ class_name Player
 ## [Debug] Texto que indica el estado actual del jugador
 @onready var debug_state_label = $Path3D/PathFollow3D/Sprite3D/debug_state_label
 
-## Coordenada 'y' del suelo
-@export var floor_y = 0
-
 ## Velocidad a la que se movera el jugador
 @export var speed = 0.1
 

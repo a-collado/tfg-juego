@@ -1,3 +1,4 @@
+@icon("res://Assets/Iconos/Editor/state_machine_state.svg")
 extends Node
 class_name BaseState
 ## Base para todos los posibles estados del jugador
@@ -50,7 +51,7 @@ func input(movementVector, shooting) -> int:
 		return State.Manual
 	return State.Null
 
-func floor_vector(vector: Vector3) -> Vector3:
+func _floor_vector(vector: Vector3) -> Vector3:
 	# Usamos floor_y para que el jugador siempre este a nivel del suelo
 	return player.to_local(Vector3(vector.x,
-			player.floor_y, vector.z))
+			Global.floor_y, vector.z))

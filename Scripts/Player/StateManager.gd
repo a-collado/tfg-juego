@@ -1,3 +1,5 @@
+@icon("res://Assets/Iconos/Editor/finite_state_machine.svg")
+class_name StateMachine
 extends Node
 ## Maquina de estados finita que contiene todos los poibles comportamientos
 ## de un jugador
