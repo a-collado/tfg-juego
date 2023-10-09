@@ -5,9 +5,9 @@
 [ext_resource type="Script" path="res://Scripts/Player/StateManager.gd" id="3_w601u"]
 [ext_resource type="Script" path="res://Scripts/Player/States/Manual.gd" id="4_htdmx"]
 [ext_resource type="Script" path="res://Scripts/Player/States/Idle.gd" id="5_iav48"]
-[ext_resource type="Script" path="res://Scripts/Player/States/Shoot.gd" id="6_fyuaq"]
 [ext_resource type="Script" path="res://Scripts/Player/States/Fetch.gd" id="7_mhrsl"]
 [ext_resource type="PackedScene" uid="uid://25pl1mvpb0ct" path="res://addons/LineRenderer/LineRenderer.tscn" id="7_tdch1"]
+[ext_resource type="Script" path="res://Scripts/Player/States/Attack.gd" id="7_tj53w"]
 
 [sub_resource type="Curve3D" id="Curve3D_u6myo"]
 
@@ -7537,11 +7537,12 @@ animation = "run"
 script = ExtResource("5_iav48")
 animation = "idle"
 
-[node name="Shoot" type="Node" parent="State Manager"]
-script = ExtResource("6_fyuaq")
-
 [node name="Fetch" type="Node" parent="State Manager"]
 script = ExtResource("7_mhrsl")
+animation = "run"
+
+[node name="Attack" type="Node" parent="State Manager"]
+script = ExtResource("7_tj53w")
 animation = "run"
 
 [node name="LineRenderer" parent="." instance=ExtResource("7_tdch1")]

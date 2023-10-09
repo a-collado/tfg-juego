@@ -10,12 +10,8 @@ var player: Player = null
 
 func shoot(target_position):
 	tween = create_tween().bind_node(self)
-	
-	var distance = global_position.distance_to(target_position)
 
-	# Hay que hacer que el tween se pare cuando toque a un jugador
-	# Probablemente habria que trasladar la logica de mover la pelota
-	# a un script en la propia pelota
+	var distance = global_position.distance_to(target_position)
 	tween.tween_property(self, "global_position", target_position, 1)
 
 

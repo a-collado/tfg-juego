@@ -11,8 +11,8 @@ enum State {
 	Null,
 	Manual,
 	Idle,
-	Shoot,
-	Fetch
+	Fetch,
+	Attack
 }
 
 ## String que indica la animacion que se reproducira en este estado
@@ -37,7 +37,7 @@ func exit():
 
 func process(_delta: float) -> int:
 	return State.Null
-	
+
 func physics_process(_delta: float) -> int:
 	return State.Null
 
@@ -49,3 +49,8 @@ func input(movementVector, shooting) -> int:
 		last_movement = movementVector
 		return State.Manual
 	return State.Null
+
+func floor_vector(vector: Vector3) -> Vector3:
+	# Usamos floor_y para que el jugador siempre este a nivel del suelo
+	return player.to_local(Vector3(vector.x,
+			player.floor_y, vector.z))

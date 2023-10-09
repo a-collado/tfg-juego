@@ -7,7 +7,7 @@ class_name Player
 ## para que puedan ser usados por la maquina de estados.
 ## Tambien maneja la posesion del balon
 
-## Maquina de estados que maneja el comportamiento del jugador 
+## Maquina de estados que maneja el comportamiento del jugador
 @onready var states = $"State Manager"
 ## Linea que seguira el PathFollow3D
 @onready var path3D: Path3D = $Path3D
@@ -28,7 +28,7 @@ class_name Player
 
 @onready var team: Team = self.get_parent()
 
-## [Debug] Texto que indica el estado actual del jugador 
+## [Debug] Texto que indica el estado actual del jugador
 @onready var debug_state_label = $Path3D/PathFollow3D/Sprite3D/debug_state_label
 
 ## Coordenada 'y' del suelo
@@ -40,15 +40,14 @@ class_name Player
 ## Tiempo que tiene que pasar para que un jugador pueda volver a tener el balon
 var ball_cooldown = 0.5
 
-## Indica si el jugador esta en posesion del balon
-#var ball_possesion = false
-## Variable donde guardaremos el balon cuando el jugador tenga posesion
+## Posicion del jugador en el campo
+var player_position : set = set_player_position, get = get_player_position
 
 func _ready():
 	states.init(self)
 	ball_timer.wait_time = ball_cooldown
 	pathFollow.rotation_mode = PathFollow3D.ROTATION_XY
-	
+
 func _physics_process(delta):
 	states.physics_process(delta)
 
@@ -85,3 +84,9 @@ func dettach_ball():
 	ball.reparent(get_tree().get_root())
 	ball.player = null
 	ball_timer.start()
+
+func set_player_position(desired_position):
+	pathFollow.global_position = desired_position
+
+func get_player_position() -> Vector3:
+	return pathFollow.global_position

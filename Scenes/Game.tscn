@@ -80,7 +80,7 @@ sides = 16
 
 [node name="Area3D" type="Area3D" parent="Environment/Goal A"]
 collision_layer = 4
-collision_mask = 4
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Goal A/Area3D"]
 transform = Transform3D(3.24487, 0, 0, 0, 3.24487, 0, 0, 0, 3.24487, 0, 0.748212, 0.0711651)
@@ -95,7 +95,7 @@ sides = 16
 
 [node name="Area3D" type="Area3D" parent="Environment/Goal B"]
 collision_layer = 4
-collision_mask = 4
+collision_mask = 6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Goal B/Area3D"]
 transform = Transform3D(3.24487, 0, 0, 0, 3.24487, 0, 0, 0, 3.24487, 0, 1.27072, 0.0711651)
@@ -127,8 +127,9 @@ collision_mask = 6
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ball/Area3D"]
 shape = SubResource("SphereShape3D_0vqjl")
 
-[node name="Team A" type="Node" parent="."]
+[node name="Team A" type="Node" parent="." node_paths=PackedStringArray("goal_target")]
 script = ExtResource("2_e1w31")
+goal_target = NodePath("../Environment/Goal B")
 
 [node name="Player 1" parent="Team A" instance=ExtResource("1_7ehee")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 17.18)
@@ -139,8 +140,9 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.059
 [node name="Player 3" parent="Team A" instance=ExtResource("1_7ehee")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.70017, 0.00405732, 21.168)
 
-[node name="Team B" type="Node" parent="."]
+[node name="Team B" type="Node" parent="." node_paths=PackedStringArray("goal_target")]
 script = ExtResource("2_e1w31")
+goal_target = NodePath("../Environment/Goal A")
 
 [node name="Enemy 1" parent="Team B" instance=ExtResource("5_5nsy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.202737, 0.00405633, -13.9976)
@@ -173,6 +175,7 @@ libraries = {
 }
 
 [node name="GameManager" type="Node" parent="." node_paths=PackedStringArray("team_A", "team_B")]
+process_mode = 3
 editor_description = "Nodo que maneja cuando empieza y acaba el partido, y las puntuaciones de cada equipo"
 script = ExtResource("10_o3gjt")
 team_A = NodePath("../Team A")

@@ -8,7 +8,7 @@ signal player_pressed
 @onready var player: Player = $"../../../.."
 
 func _input_event(_camera, event, _position, _normal, _shape_idx):
-	
+
 	# Si al Area3D es tocada por un Touch Input emitimos la señal
 	if event is InputEventScreenTouch:
 		if event.pressed:
