@@ -129,3 +129,4 @@ func save_raycast_position():
 			current_line3D.append(position_floored)
 			# Guardamos la posicion actual para evitar repeticiones
 			last_raycast_position = position_floored
+			
