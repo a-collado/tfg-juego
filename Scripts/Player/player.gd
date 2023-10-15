@@ -8,7 +8,7 @@ class_name Player
 ## Tambien maneja la posesion del balon
 
 ## Maquina de estados que maneja el comportamiento del jugador
-@onready var states = $"State Manager"
+@onready var states: StateMachine = $"State Manager"
 ## Linea que seguira el PathFollow3D
 @onready var path3D: Path3D = $Path3D
 ## Nodo encargado de seguir la linea que indica el camino del jugador
@@ -29,16 +29,16 @@ class_name Player
 @onready var team: Team = self.get_parent()
 
 ## [Debug] Texto que indica el estado actual del jugador
-@onready var debug_state_label = $Path3D/PathFollow3D/Sprite3D/debug_state_label
+@onready var debug_state_label: Label3D = $Path3D/PathFollow3D/Sprite3D/debug_state_label
 
 ## Velocidad a la que se movera el jugador
-@export var speed = 0.1
+@export var speed: float = 0.1
 
 ## Tiempo que tiene que pasar para que un jugador pueda volver a tener el balon
-var ball_cooldown = 0.5
+var ball_cooldown: float = 0.5
 
 ## Posicion del jugador en el campo
-var player_position : set = set_player_position, get = get_player_position
+var player_position: Vector3 : set = set_player_position, get = get_player_position
 
 func _ready():
 	states.init(self)
@@ -48,20 +48,18 @@ func _ready():
 func _physics_process(delta):
 	states.physics_process(delta)
 
-## Shooting indica si se esta moviendo o esta chutando
-## true: Chutando	false: Moviendose
-func input(movementVector, shooting):
-	states.input(movementVector, shooting)
+func input(movementVector) -> void:
+	states.input(movementVector)
 
 ## Se llama cuando un area entra en contacto con 'player_area'
-func _on_player_area_3d_area_shape_entered(_area_rid, area, _area_shape_index, _local_shape_index):
+func _on_player_area_3d_area_shape_entered(_area_rid, area, _area_shape_index, _local_shape_index) -> void:
 	# Comprobamos si el jugador ha tocado la pelota
 	var detected_ball = area.get_parent()
 	if detected_ball is Ball && detected_ball.player == null:
 		attach_ball(area)
 
 ## Transferimos la posesion del balon al jugador
-func attach_ball(area):
+func attach_ball(area) -> void:
 	# Esto aun esta a medias:
 	if !ball_timer.is_stopped():
 		return
@@ -74,7 +72,7 @@ func attach_ball(area):
 	ball.position = Vector3(0, 0.004, 0.75)
 
 ## Retiramos la posesion del balon al jugador
-func dettach_ball():
+func dettach_ball() -> void:
 	# Esto aun esta a medias:
 
 	ball.collision_shape.set_deferred("disabled", false)
@@ -82,7 +80,7 @@ func dettach_ball():
 	ball.player = null
 	ball_timer.start()
 
-func set_player_position(desired_position):
+func set_player_position(desired_position) -> void:
 	pathFollow.global_position = desired_position
 
 func get_player_position() -> Vector3:

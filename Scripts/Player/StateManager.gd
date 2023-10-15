@@ -16,7 +16,7 @@ var current_state: BaseState
 }
 
 ## Inicializamos todos los posibles estados
-func init(player: Player):
+func init(player: Player) -> void:
 	for child in get_children():
 		if child is BaseState:
 			child.player = player
@@ -24,19 +24,19 @@ func init(player: Player):
 	## El estado inicial sera "Idle"
 	change_state(BaseState.State.Idle)
 
-func change_state(new_state: int):
+func change_state(new_state: int) -> void:
 	if current_state:
 		current_state.exit()
 
 	current_state = states[new_state]
 	current_state.enter()
 
-func physics_process(delta: float):
+func physics_process(delta: float) -> void:
 	var new_state = current_state.physics_process(delta)
 	if new_state != BaseState.State.Null:
 		change_state(new_state)
 
-func input(movementVector, shooting):
-	var new_state = current_state.input(movementVector, shooting)
+func input(movementVector) -> void:
+	var new_state = current_state.input(movementVector)
 	if new_state != BaseState.State.Null:
 		change_state(new_state)

@@ -23,16 +23,16 @@ enum State {
 var player: Player
 
 ## Ultimo input que se relizo
-var last_movement
+var last_movement: PackedVector3Array
 
 ## Se llamara cada vez que se entre a este estado
-func enter():
+func enter() -> void:
 	#print("Entering " + name + " state")
 	player.debug_state_label.text = name
 	player.animator.play(animation)
 
 ## Se llamara cada vez que se salga de este estado
-func exit():
+func exit() -> void:
 	#print("Exiting " + name + " state")
 	pass
 
@@ -43,10 +43,10 @@ func physics_process(_delta: float) -> int:
 	return State.Null
 
 ## Enviar informacion sobre los inputs a este estado
-func input(movementVector, shooting) -> int:
+func input(movementVector: PackedVector3Array) -> int:
 	# Si se detecta movimiento, cambiamos a estado manual
 	# Comprobamos que el vector no este vacio y que sea diferente al ultimo input
-	if movementVector != PackedVector3Array([]) && movementVector != last_movement:
+	if !movementVector.is_empty() && movementVector != last_movement:
 		last_movement = movementVector
 		return State.Manual
 	return State.Null

@@ -1,6 +1,6 @@
 extends BaseState
 
-func input(movementVector, shooting) -> int:
+func input(movementVector) -> int:
 	player.ball.shoot(movementVector)
 	player.dettach_ball()
 	return State.Idle

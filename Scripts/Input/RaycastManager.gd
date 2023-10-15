@@ -1,11 +1,11 @@
 extends Node3D
 
-@onready var camera = get_viewport().get_camera_3d()
+@onready var camera: Camera3D = get_viewport().get_camera_3d()
 
 ## Mascara de colision para solo colisionar con el suelo
-@export var floor_collision_mask = 1 	# 1: Mascara del suelo
+@export var floor_collision_mask: int = 1 	# 1: Mascara del suelo
 ## Distancia maxima a la que llegara el raycast 
-const ray_length = 1000
+const ray_length: int = 1000
 
 ## Variable donde se guardara el resultado del ultimo raycast emitido
 var raycast_result = null

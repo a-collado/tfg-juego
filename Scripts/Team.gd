@@ -1,7 +1,7 @@
 extends Node
 class_name Team
 
-var players: Array
+var players: Array[Player]
 
 @export var goal_target: CSGCylinder3D
 
@@ -10,5 +10,5 @@ func _ready():
 	players.append_array(get_children())
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass

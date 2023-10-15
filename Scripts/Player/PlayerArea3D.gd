@@ -7,7 +7,7 @@ signal player_pressed
 ## Referencia a el jugador que esta siendo pulsado
 @onready var player: Player = $"../../../.."
 
-func _input_event(_camera, event, _position, _normal, _shape_idx):
+func _input_event(_camera, event, _position, _normal, _shape_idx) -> void:
 
 	# Si al Area3D es tocada por un Touch Input emitimos la señal
 	if event is InputEventScreenTouch:

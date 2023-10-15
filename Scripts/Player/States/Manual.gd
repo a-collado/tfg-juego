@@ -3,7 +3,7 @@ extends BaseState
 ## Curva que contiene los puntos del path que ha de seguir el jugador
 var curve3d: Curve3D
 
-func enter():
+func enter() -> void:
 	player.debug_state_label.text = name
 	player.animator.play(animation)
 
@@ -15,10 +15,10 @@ func enter():
 	clean_path()
 	_reset_line_renderer()
 
-func exit():
+func exit() -> void:
 	clean_path()
 
-func input(movementVector, shooting) -> int:
+func input(movementVector) -> int:
 	return _create_curves(movementVector)
 
 ## Creamos la curva que seguira el jugador en base a un Vector de coordenadas
@@ -52,7 +52,7 @@ func physics_process(_delta: float) -> int:
 	return State.Null
 
 ## Reiniciamos el camino del jugador
-func clean_path():
+func clean_path() -> void:
 	curve3d.clear_points()
 	player.pathFollow.progress_ratio = 0
 
@@ -62,7 +62,7 @@ func clean_path():
 	player.line_renderer3D.points = PackedVector3Array([Vector3.ZERO, Vector3.ZERO])
 
 ## Comprobamos si el line_renderer esta "vacio" y lo inicializamos
-func _reset_line_renderer():
+func _reset_line_renderer() -> void:
 	# Si no hacemos esto, la linea empezara en (0, 0, 0)
 	if player.line_renderer3D.points == PackedVector3Array([Vector3.ZERO, Vector3.ZERO]):
 		player.line_renderer3D.points = PackedVector3Array()
@@ -82,7 +82,7 @@ func _find_closest_node_to_point(array, point):
 	return closest_node
 
 ## Hacemos que la linea que indica el Path se empiece a dibujar en los pies del jugador
-func _trim_line_to_player():
+func _trim_line_to_player() -> void:
 	# Obtenemos la posicion actual del jugador
 	var player_position = player.pathFollow.position
 	# Hacemos que y esta a la misma altura que la linea dibujada

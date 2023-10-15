@@ -8,13 +8,13 @@ var tween: Tween
 # Jugador que tiene posesion de la pelota
 var player: Player = null
 
-func shoot(target_position):
+func shoot(target_position) -> void:
 	tween = create_tween().bind_node(self)
 
-	var distance = global_position.distance_to(target_position)
+	var _distance = global_position.distance_to(target_position)
 	tween.tween_property(self, "global_position", target_position, 1)
 
 
-func stop():
+func stop() -> void:
 	if tween:
 		tween.stop()
