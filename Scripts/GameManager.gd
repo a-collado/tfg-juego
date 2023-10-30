@@ -5,6 +5,8 @@ extends Node
 
 @onready var ball: Ball = %Ball
 
+const PLAYER_VAR: String = "player"
+
 var inital_positions: PackedVector3Array
 
 func _ready() -> void:
@@ -30,7 +32,7 @@ func _on_goal_B_entered(area) -> void:
 #		var ball_player = area.get_parent().player
 #		if ball_player != null && ball_player.team == team_A:
 #			print("Golazo del equipo A")
-	if "player" in area:
+	if PLAYER_VAR in area:
 		var player = area.player
 		if ball.player == player && player.team == team_A:
 			print("Golazo del equipo A")
@@ -41,7 +43,7 @@ func _on_goal_A_entered(area) -> void:
 #		var ball_player = area.get_parent().player
 #		if ball_player != null && ball_player.team == team_B:
 #			print("Golazo del equipo A")
-	if "player" in area:
+	if PLAYER_VAR in area:
 		var player = area.player
 		if ball.player == player && player.team == team_B:
 			print("Golazo del equipo B")
